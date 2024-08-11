@@ -1,12 +1,4 @@
-
-import '../../styles/Home.css'
-import Intro from './Components/Intro'
-import About from './Components/About'
-import Highlights from './Components/Highlights'
-import Sponsors from './Components/Sponsors'
-import Events from './Components/Events'
-
-export default function Home(){
+export default function EventCategory(){
     return(
         <>
             <div className="background-image bg-1"></div>
@@ -17,7 +9,7 @@ export default function Home(){
 
             <div className="content">
                 <div >
-                    <Intro/>
+                    <h1 >Events</h1>
                 </div>
             </div>
         </>
