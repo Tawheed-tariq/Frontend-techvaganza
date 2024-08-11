@@ -1,4 +1,9 @@
 import '../../styles/Home.css'
+import Intro from './Components/Intro'
+import About from './Components/About'
+import Highlights from './Components/Highlights'
+import Sponsors from './Components/Sponsors'
+import Events from './Components/Events'
 
 export default function Home(){
     return(
@@ -11,7 +16,7 @@ export default function Home(){
 
             <div class="content">
                 <div >
-                    <h1>Home</h1>
+                    <Intro/>
                 </div>
             </div>
         </>
