@@ -1,8 +1,13 @@
-import '../../styles/Events.css'
+import { Route, Routes } from 'react-router-dom'
+import EventCategory from './pages/EventCategory'
+
+
 export default function Events(){
     return(
         <>
-            <h1>Events</h1>
+            <Routes >
+                <Route path="/" element={<EventCategory/>} />
+            </Routes>
         </>
     )
 }

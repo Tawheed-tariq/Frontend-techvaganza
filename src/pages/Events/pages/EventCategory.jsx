@@ -1,5 +1,4 @@
-
-export default function Home(){
+export default function EventCategory(){
     return(
         <>
             <div className="background-image bg-1"></div>
@@ -10,7 +9,7 @@ export default function Home(){
 
             <div className="content">
                 <div >
-                    <h1>Home</h1>
+                    <h1 >Events</h1>
                 </div>
             </div>
         </>
