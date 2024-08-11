@@ -27,6 +27,30 @@ body{
     opacity: 0.8; /*Adjust to make content readable */
 }
 
+.bg-1 {
+    top: 0%; /* Adjust position as needed */
+    left: 6%; /* Adjust position as needed */
+    width: 100rem; 
+    height: 100rem; 
+    background-image: url('Group 1.png');
+}
+
+.bg-2 {
+    top: 18%; /* Adjust position as needed */
+    left: -50%; /* Adjust position as needed */
+    width: 90rem; 
+    height: 60rem; 
+    background-image: url('Group 6.png');
+}
+
+.bg-3 {
+    top: 90%; /* Adjust position as needed */
+    left: 84%; /* Adjust position as needed */
+    width: 20rem; 
+    height: 20rem; 
+    background-image: url('Group 6.png');
+}
+
 
 /* Glassmorphism Layer */
 .glass-layer {
