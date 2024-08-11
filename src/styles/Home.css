@@ -1,8 +1,8 @@
 .bg-1 {
-    top: 10%; /* Adjust position as needed */
+    top: 0%; /* Adjust position as needed */
     left: 6%; /* Adjust position as needed */
-    width: 120rem; 
-    height: 110rem; 
+    width: 100rem; 
+    height: 100rem; 
     background-image: url('Group 1.png');
 }
 
@@ -15,10 +15,10 @@
 }
 
 .bg-3 {
-    top: 30%; /* Adjust position as needed */
-    left: 30%; /* Adjust position as needed */
-    width: 80rem; 
-    height: 86rem; 
+    top: 90%; /* Adjust position as needed */
+    left: 84%; /* Adjust position as needed */
+    width: 20rem; 
+    height: 20rem; 
     background-image: url('Group 6.png');
 }
 
