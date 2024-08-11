@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Averia+Serif+Libre:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #64ECC9;
+    --secondary-color: #EDE7E7;
+    --primary-font: 'Playfair Display', serif;
+    --secondary-font: 'Averia Serif Libre', serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
