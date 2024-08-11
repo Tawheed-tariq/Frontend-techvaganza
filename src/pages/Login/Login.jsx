@@ -2,6 +2,17 @@ import '../../styles/Login.css'
 
 export default function Login(){
     return(
-        <>login</>
+        <>
+            <div class="background-image bg-1"></div>
+            <div class="background-image bg-2"></div>
+
+            <div class="glass-layer"></div>
+
+            <div class="content">
+                <div >
+                    <h1>Login</h1>
+                </div>
+            </div>
+        </>
     )
 }
