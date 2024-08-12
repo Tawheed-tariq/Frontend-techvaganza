@@ -1,3 +1,4 @@
+import Header from "../../Components/Header";
 
 export default function Home(){
     return(
@@ -10,7 +11,10 @@ export default function Home(){
 
             <div className="content">
                 <div >
-                    <h1>Home</h1>
+                    <Header/>
+                </div>
+                <div>
+                    <h1>home</h1>
                 </div>
             </div>
         </>

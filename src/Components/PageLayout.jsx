@@ -1,4 +1,5 @@
 import '../App.css'
+import Header from './Header'
 export default function PageLayout({ title, imgUrl, children }) {
   return (
     <>
@@ -15,7 +16,7 @@ export default function PageLayout({ title, imgUrl, children }) {
           className={`bg-cover bg-no-repeat h-[480px]`}
         >
           <div className="w-full h-full flex flex-col">
-            <div className="py-5 bg-primary bg-opacity-20">Header</div>
+            <Header/>
             <div className="px-52 flex items-center font-playfair flex-grow">
               <p className="text-secondary font-extrabold text-5xl leading-normal">
                 {title}
