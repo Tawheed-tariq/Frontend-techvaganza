@@ -77,5 +77,4 @@ body{
 .content {
     position: relative;
     z-index: 3; /* On top of all layers */
-    padding: 20px;
 }
