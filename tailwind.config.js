@@ -10,6 +10,10 @@ export default {
         'primary' : '#64ECC9',
         'secondary' : '#EDE7E7'
        },
+       fontFamily: {
+        'playfair': ['Playfair Display', 'serif'],
+        'averia': ['Averia Serif Libre', 'cursive'],
+       },
     },
     fontFamily: {
       'playfair': ['Playfair Display', 'serif'],
