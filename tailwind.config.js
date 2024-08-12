@@ -8,7 +8,9 @@ export default {
     extend: {
       colors: {
         'primary' : '#64ECC9',
-        'secondary' : '#EDE7E7'
+        'secondary' : '#EDE7E7',
+         'highlightColor':'#64ECC966', 
+         'eventBorder' :'#FFFFFF4D'         
        },
        fontFamily: {
         'playfair': ['Playfair Display', 'serif'],
@@ -17,8 +19,9 @@ export default {
     },
     fontFamily: {
       'playfair': ['Playfair Display', 'serif'],
-      'averia': ['Averia Serif Libre', 'cursive'],
+      'averia': ['Averia Serif Libre'],
      },
+     
     screens: {
       xs: "480px",
       ss: "620px",

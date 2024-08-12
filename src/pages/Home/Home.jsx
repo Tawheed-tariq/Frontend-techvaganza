@@ -6,8 +6,7 @@ import Highlights from './Components/Highlights'
 import Sponsors from './Components/Sponsors'
 import Events from './Components/Events'
 
-import '../../styles/Home.css';
-import Header from'./components/Header';
+//import Header from'./components/Header';
 
 
 
@@ -15,7 +14,6 @@ export default function Home(){
     return(
         <> 
         <div className='container'>
-            <Header />
         </div>
             <div className="background-image bg-1"></div>
             <div className="background-image bg-2"></div>
@@ -26,6 +24,10 @@ export default function Home(){
             <div className="content">
                 <div >
                     <Intro/>
+                    <About/>
+                    <Highlights/>
+                    <Sponsors/>
+                    <Events/>
                 </div>
             </div>
         </>
