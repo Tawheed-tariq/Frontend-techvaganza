@@ -1,5 +1,4 @@
 
-import '../../styles/Home.css'
 import Intro from './Components/Intro'
 import About from './Components/About'
 import Highlights from './Components/Highlights'
