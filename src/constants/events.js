@@ -1,37 +1,35 @@
 export const EventCategoryList = [
-    {
-      id: 1,
-      title: "Visual Arts",
-      url: "visual-arts",
-      img: "events/competetions.png",
-    },
-    {
-      id: 2,
-      title: "Performing Arts",
-      url: "performing-arts",
-      img: "events/competetions.png",
-    },
-    {
-      id: 3,
-      title: "Musical Arts",
-      url: "muzical-arts",
-      img: "events/competetions.png",
-    },
-    {
-      id: 4,
-      title: "Game Zone",
-      url: "gaming-zone",
-      img: "events/competetions.png",
-    },
-    {
-      id: 5,
-      title: "Others",
-      url: "others",
-      img: "events/competetions.png",
-    },
-  ];
-  
-
+  {
+    id: 1,
+    title: "Visual Arts",
+    url: "visual-arts",
+    img: "events/competetions.png",
+  },
+  {
+    id: 2,
+    title: "Performing Arts",
+    url: "performing-arts",
+    img: "events/competetions.png",
+  },
+  {
+    id: 3,
+    title: "Musical Arts",
+    url: "muzical-arts",
+    img: "events/competetions.png",
+  },
+  {
+    id: 4,
+    title: "Game Zone",
+    url: "gaming-zone",
+    img: "events/competetions.png",
+  },
+  {
+    id: 5,
+    title: "Others",
+    url: "others",
+    img: "events/competetions.png",
+  },
+];
 
 export const VisualEvents = [
   {
@@ -99,74 +97,71 @@ export const VisualEvents = [
   },
 ];
 
-
-
 export var MuzicalEvents = [
   {
     event: "Solo Song Eastern",
     time: "2:00 pm, Day-1",
     venue: "Common Hall",
     image: "",
-    url: ""
+    url: "",
   },
   {
     event: "Solo Song Western",
     time: "10:15 am, Day-2",
     venue: "Open Mic Stage",
     image: "",
-    url: ""
+    url: "",
   },
   {
     event: "Solo Regional Instrumental",
     time: "11:30 am, Day-1",
     venue: "Open Mic Stage",
     image: "",
-    url: ""
+    url: "",
   },
   {
     event: "Duet Song",
     time: "2:00 pm, Day-1",
     venue: "Open Mic Stage",
     image: "",
-    url: ""
+    url: "",
   },
   {
     event: "Rap",
     time: "12:30 pm, Day-1",
     venue: "Open Mic Stage",
     image: "",
-    url: ""
+    url: "",
   },
   {
     event: "Battle Of Bands",
     time: "6:00 pm, Day-1",
     venue: "Main Stage",
     image: "",
-    url: ""
+    url: "",
   },
   {
     event: "BeatBox",
     time: "11:30 am, Day-2",
     venue: "Open Mic Stage",
     image: "",
-    url: ""
+    url: "",
   },
   {
     event: "Ladi Shah (Story telling )",
     time: "1:30 pm, Day-2",
     venue: "HT-2",
     image: "",
-    url: ""
+    url: "",
   },
   {
     event: "Acapella (Group Singing)",
     time: "3:00 pm, Day-2",
     venue: "Main Stage",
     image: "",
-    url: ""
-  }
+    url: "",
+  },
 ];
-
 
 export var gamingEvents = [
   {
@@ -174,11 +169,9 @@ export var gamingEvents = [
     time: "9:00 am, Both Days",
     venue: "PF",
     image: "",
-    url: ""
-  }
+    url: "",
+  },
 ];
-
-
 
 export var OtherEvents = [
   {
@@ -186,46 +179,44 @@ export var OtherEvents = [
     time: "9:00 am, Day-1",
     venue: "Workshop",
     image: "",
-    url: ""
+    url: "",
   },
   {
     event: "Paper Mache Studio",
     time: "1:00 pm, Day-1",
     venue: "DH-2",
     image: "",
-    url: ""
+    url: "",
   },
   {
     event: "Willow Wicker Studio",
     time: "3:30 pm, Day-1",
     venue: "DH-2",
     image: "",
-    url: ""
+    url: "",
   },
   {
     event: "Origami Studio",
     time: "9:00 am, Day-2",
     venue: "DH-2",
     image: "",
-    url: ""
+    url: "",
   },
   {
     event: "The Trained Cuisine (South)",
     time: "11.30 am, Day-2",
     venue: "Workshop",
     image: "",
-    url: ""
+    url: "",
   },
   {
     event: "Tattoo Making Studio",
     time: "3.30 pm, Day-2",
     venue: "DH-2",
     image: "",
-    url: ""
-  }
+    url: "",
+  },
 ];
-
-
 
 export const PerformingEvents = [
   {
@@ -332,5 +323,156 @@ export const PerformingEvents = [
     venue: "Main Stage",
     image: "",
     url: "",
+  },
+];
+
+export const day1Events = [
+  {
+    title: "Live Photography",
+    startTime: "9:00 am",
+    endTime: "6:30 pm",
+    venue: "Campus",
+    registerUrl: "#",
+    exploreUrl: "#",
+  },
+  {
+    title: "Live Photography",
+    startTime: "9:00 am",
+    endTime: "6:30 pm",
+    venue: "Campus",
+    registerUrl: "#",
+    exploreUrl: "#",
+  },
+  {
+    title: "Live Photography",
+    startTime: "9:00 am",
+    endTime: "6:30 pm",
+    venue: "Campus",
+    registerUrl: "#",
+    exploreUrl: "#",
+  },
+  {
+    title: "Live Photography",
+    startTime: "9:00 am",
+    endTime: "6:30 pm",
+    venue: "Campus",
+    registerUrl: "#",
+    exploreUrl: "#",
+  },
+  {
+    title: "Live Photography",
+    startTime: "9:00 am",
+    endTime: "6:30 pm",
+    venue: "Campus",
+    registerUrl: "#",
+    exploreUrl: "#",
+  },
+  {
+    title: "Live Photography",
+    startTime: "9:00 am",
+    endTime: "6:30 pm",
+    venue: "Campus",
+    registerUrl: "#",
+    exploreUrl: "#",
+  },
+  {
+    title: "Live Photography",
+    startTime: "9:00 am",
+    endTime: "6:30 pm",
+    venue: "Campus",
+    registerUrl: "#",
+    exploreUrl: "#",
+  },
+  {
+    title: "Live Photography",
+    startTime: "9:00 am",
+    endTime: "6:30 pm",
+    venue: "Campus",
+    registerUrl: "#",
+    exploreUrl: "#",
+  },
+  {
+    title: "Live Photography",
+    startTime: "9:00 am",
+    endTime: "6:30 pm",
+    venue: "Campus",
+    registerUrl: "#",
+    exploreUrl: "#",
+  },
+];
+
+
+export const day2Events = [
+  {
+    title: "30 sec reel making",
+    startTime: "9:00 am",
+    endTime: "6:30 pm",
+    venue: "Campus",
+    registerUrl: "#",
+    exploreUrl: "#",
+  },
+  {
+    title: "Live Photography",
+    startTime: "9:00 am",
+    endTime: "6:30 pm",
+    venue: "Campus",
+    registerUrl: "#",
+    exploreUrl: "#",
+  },
+  {
+    title: "Live Photography",
+    startTime: "9:00 am",
+    endTime: "6:30 pm",
+    venue: "Campus",
+    registerUrl: "#",
+    exploreUrl: "#",
+  },
+  {
+    title: "Live Photography",
+    startTime: "9:00 am",
+    endTime: "6:30 pm",
+    venue: "Campus",
+    registerUrl: "#",
+    exploreUrl: "#",
+  },
+  {
+    title: "Live Photography",
+    startTime: "9:00 am",
+    endTime: "6:30 pm",
+    venue: "Campus",
+    registerUrl: "#",
+    exploreUrl: "#",
+  },
+  {
+    title: "Live Photography",
+    startTime: "9:00 am",
+    endTime: "6:30 pm",
+    venue: "Campus",
+    registerUrl: "#",
+    exploreUrl: "#",
+  },
+  {
+    title: "Live Photography",
+    startTime: "9:00 am",
+    endTime: "6:30 pm",
+    venue: "Campus",
+    registerUrl: "#",
+    exploreUrl: "#",
+  },
+  {
+    title: "Live Photography",
+    startTime: "9:00 am",
+    endTime: "6:30 pm",
+    venue: "Campus",
+    registerUrl: "#",
+    exploreUrl: "#",
+  },
+  {
+    title: "Live Photography",
+    startTime: "9:00 am",
+    endTime: "6:30 pm",
+    venue: "Campus",
+    registerUrl: "#",
+    exploreUrl: "#",
   },
 ];
