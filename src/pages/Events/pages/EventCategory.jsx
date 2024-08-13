@@ -9,6 +9,7 @@ export default function EventCategory() {
         {EventCategoryList.map((item) => (
           <CategoryCard key={item.id} title={item.title} url={item.url} img={item.img} />
         ))}
+        
       </div>
     </PageLayout>
   );
