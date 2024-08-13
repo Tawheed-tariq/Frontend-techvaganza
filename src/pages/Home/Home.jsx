@@ -1,4 +1,17 @@
+
 import Header from'../../Components/Header';
+
+
+
+import Intro from './Components/Intro'
+import About from './Components/About'
+import Highlights from './Components/Highlights'
+import Sponsors from './Components/Sponsors'
+import Events from './Components/Events'
+
+
+
+
 
 export default function Home(){
     return(
@@ -11,6 +24,13 @@ export default function Home(){
 
             <div className="content">
                     <Header />
+                <div >
+                    <Intro/>
+                    <About/>
+                    <Highlights/>
+                    <Sponsors/>
+                    <Events/>
+                </div>
             </div>
         </>
     )
