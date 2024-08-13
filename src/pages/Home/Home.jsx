@@ -1,18 +1,16 @@
-import '../../styles/Home.css'
+import Header from'../../Components/Header';
 
 export default function Home(){
     return(
-        <>
-            <div class="background-image bg-1"></div>
-            <div class="background-image bg-2"></div>
-            <div class="background-image bg-3"></div>
+        <> 
+            <div className="background-image bg-1"></div>
+            <div className="background-image bg-2"></div>
+            <div className="background-image bg-3"></div>
 
-            <div class="glass-layer"></div>
+            <div className="glass-layer"></div>
 
-            <div class="content">
-                <div >
-                    <h1>Home</h1>
-                </div>
+            <div className="content">
+                    <Header />
             </div>
         </>
     )
