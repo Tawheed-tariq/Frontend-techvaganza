@@ -4,7 +4,7 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 
 const Footer = () => {
   return (
-    <footer className="bg-primary bg-opacity-20 text-white py-6 font-averia fixed bottom-0 left-0 w-full z-10">
+    <footer className="bg-primary bg-opacity-20 text-white py-6 font-averia bottom-0 left-0 w-full z-10">
       <div className="container mx-auto px-4">
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-1/3 mb-4 md:mb-0">
