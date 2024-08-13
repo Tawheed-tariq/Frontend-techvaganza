@@ -1,4 +1,6 @@
 
+/* import '../../styles/Home.css'; */
+/* import Header from'./components/Header'; */
 import Header from'../../Components/Header';
 
 
@@ -13,9 +15,13 @@ import Events from './Components/Events'
 
 
 
+import Footer from '../../Components/Footer'
 export default function Home(){
     return(
         <> 
+        <div className='container'>
+           {/*  <Header /> */}
+        </div>
             <div className="background-image bg-1"></div>
             <div className="background-image bg-2"></div>
             <div className="background-image bg-3"></div>
@@ -32,6 +38,7 @@ export default function Home(){
                     <Events/>
                 </div>
             </div>
-        </>
+      
+</>
     )
 }
