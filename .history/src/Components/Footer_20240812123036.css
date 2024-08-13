@@ -1,0 +1,10 @@
+footer {
+    background-color: rgba(56, 102, 189, 0.8);/* Tailwind's bg-green-500 */
+    color: #ffffff; /* Tailwind's text-white */
+    padding: 2rem; /* Tailwind's py-8 */
+    position: fixed; /* Fix the footer to the bottom */
+    bottom: 0;
+    width: 100%;
+    z-index: 10; /* Ensure it's above other content */
+  }
+  
