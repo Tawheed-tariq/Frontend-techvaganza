@@ -36,6 +36,7 @@ body{
     background-image: url('Group 1.png');
 }
 
+
 .bg-2 {
     top: 10%; /* Adjust position as needed */
     left: -40%; /* Adjust position as needed */
@@ -79,4 +80,4 @@ body{
     position: relative;
     z-index: 3; /* On top of all layers */
 }
-}
+

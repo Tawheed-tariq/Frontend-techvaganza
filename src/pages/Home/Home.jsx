@@ -2,7 +2,7 @@
 /* import '../../styles/Home.css'; */
 /* import Header from'./components/Header'; */
 import Header from'../../Components/Header';
-
+import Footer from '../../Components/Footer';
 
 
 import Intro from './Components/Intro'
@@ -14,8 +14,6 @@ import Events from './Components/Events'
 
 
 
-
-import Footer from '../../Components/Footer'
 export default function Home(){
     return(
         <> 
@@ -37,6 +35,7 @@ export default function Home(){
                     <Sponsors/>
                     <Events/>
                 </div>
+                <Footer/>
             </div>
       
 </>
