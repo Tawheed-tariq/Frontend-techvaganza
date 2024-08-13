@@ -30,6 +30,15 @@ const Header = () => {
               <FaChevronDown className="ml-1" />
             </button>
           </div>
+          <div className="relative">
+            <button
+              className="text-white hover:text-gray-300 focus:outline-none flex items-center"
+              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+            >
+              Resources
+              <FaChevronDown className="ml-1" />
+            </button>
+          </div>
           <Link to="/contact" className="text-white hover:text-gray-300">
             Contact
           </Link>

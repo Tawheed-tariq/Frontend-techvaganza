@@ -7,8 +7,6 @@ import GamingZone from "./pages/GamingZone";
 import Others from "./pages/Others";
 
 
-
-
 export default function Events() {
   return (
     <>
