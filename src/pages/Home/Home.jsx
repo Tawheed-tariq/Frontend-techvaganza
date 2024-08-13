@@ -1,6 +1,19 @@
 
 /* import '../../styles/Home.css'; */
 /* import Header from'./components/Header'; */
+import Header from'../../Components/Header';
+
+
+
+import Intro from './Components/Intro'
+import About from './Components/About'
+import Highlights from './Components/Highlights'
+import Sponsors from './Components/Sponsors'
+import Events from './Components/Events'
+
+
+
+
 
 import Footer from '../../Components/Footer'
 export default function Home(){
@@ -16,8 +29,13 @@ export default function Home(){
             <div className="glass-layer"></div>
 
             <div className="content">
+                    <Header />
                 <div >
-                    <h1>Home</h1>
+                    <Intro/>
+                    <About/>
+                    <Highlights/>
+                    <Sponsors/>
+                    <Events/>
                 </div>
             </div>
       
