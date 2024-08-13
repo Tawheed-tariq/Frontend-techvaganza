@@ -5,6 +5,7 @@ import Register from "./pages/Register/Register";
 import Events from './pages/Events/Events'
 import './App.css'
 
+
 function App() {
   return (
     <>

@@ -5,6 +5,8 @@ import Register from "./pages/Register/Register";
 import Events from './pages/Events/Events'
 import './App.css'
 
+
+
 function App() {
   return (
     <>
@@ -16,7 +18,7 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/events" element={<Events />} />
         </Routes>
-        
+        <Footer/>
       </Router>
     </>
   );

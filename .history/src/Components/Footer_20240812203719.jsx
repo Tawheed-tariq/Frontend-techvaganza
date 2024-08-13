@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import 'leaflet/dist/leaflet.css'; // Import Leaflet CSS
 
 const Footer = () => {
   return (
@@ -9,12 +10,12 @@ const Footer = () => {
         <div className="flex flex-wrap justify-between">
           <div className="w-full md:w-1/3 mb-4 md:mb-0">
             <h2 className="text-3xl sm:text-4xl font-playfair text-primary font-extrabold mb-4 overflow-hidden">Techvaganza 2024</h2>
-            <p className="md:text-xl text-lg font-playfair text-secondary font-extrabold mb-4 break-words">Where Innovation Meets Sustainability</p>
+            <p className="text-xl sm:text-2xl font-playfair text-secondary font-extrabold mb-4 break-words">Where Innovation Meets Sustainability</p>
           </div>
 
-          <div className=" md:w-1/3 mb-4 md:mb-0">
+          <div className="w-1/3 md:w-1/3 mb-4 md:mb-0">
             <h3 className="text-xl sm:text-2xl font-playfair text-primary mb-3">Exciting Activities</h3>
-            <div className="grid grid-cols-2 gap-2 sm:gap-2">
+            <div className="grid grid-cols-2 gap-2 sm:justify-between">
   <Link to="/" className="text-secondary hover:underline text-sm font-playfair">Hackathons</Link>
   <Link to="/" className="text-secondary hover:underline text-sm font-playfair">Gaming Arena</Link>
   <Link to="/" className="text-secondary hover:underline text-sm font-playfair">Project Showcase</Link>
@@ -30,7 +31,7 @@ const Footer = () => {
 
           <div className="w-full md:w-1/3 mb-4 md:mb-0">
             <h3 className="text-xl sm:text-2xl text-primary font-playfair mb-3">Location</h3>
-            <div className="relative w-72 h-36 md:h-48 mt-2 rounded-lg overflow-hidden ">
+            <div className="relative w-full h-36 sm:h-40 mt-2 rounded-lg overflow-hidden">
               <MapContainer center={[34.083656, 74.797372]} zoom={13} style={{ height: '100%', width: '100%' }}>
                 <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
                 <Marker position={[34.083656, 74.797372]}>
@@ -40,7 +41,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="border-t border-secondary my-4 sm:my-6" /> {/* solid line */}
+        <div className="border-t border-secondary my-4 sm:my-6" /> {/* Solid line spanning full width */}
         <div className="flex flex-col sm:flex-row justify-between items-start">
           <p className="text-sm sm:text-lg font-playfair mb-2 sm:mb-0 text-center">© Techvaganza 2024, all rights reserved.</p>
           <div className="flex space-x-3 sm:space-x-4">

@@ -2,10 +2,10 @@
 /* import '../../styles/Home.css'; */
 /* import Header from'./components/Header'; */
 
-import Footer from '../../Components/Footer'
+import Footer from './Components/Footer'
 export default function Home(){
     return(
-        <> 
+        
         <div className='container'>
            {/*  <Header /> */}
         </div>
@@ -19,8 +19,8 @@ export default function Home(){
                 <div >
                     <h1>Home</h1>
                 </div>
+                <Footer/>
             </div>
-      
-</>
+                   
     )
 }

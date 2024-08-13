@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+import 'leaflet/dist/leaflet.css'; // Import Leaflet CSS
 
 const Footer = () => {
   return (
@@ -40,7 +41,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="border-t border-secondary my-4 sm:my-6" /> {/* solid line */}
+        <div className="border-t border-secondary my-4 sm:my-6" /> //solid line
         <div className="flex flex-col sm:flex-row justify-between items-start">
           <p className="text-sm sm:text-lg font-playfair mb-2 sm:mb-0 text-center">© Techvaganza 2024, all rights reserved.</p>
           <div className="flex space-x-3 sm:space-x-4">
