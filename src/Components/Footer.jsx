@@ -2,10 +2,10 @@ import { FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-[url('/common/footer-cover.jpg')] bg-cover bg-top h-96 relative text-white flex flex-col justify-center items-center font-playfair">
+    <footer className="bg-[url('/common/footer-cover.jpg')] brightness-75 bg-cover bg-top h-96 relative text-white flex flex-col justify-center items-center font-playfair">
       <div className="absolute inset-0 bg-black opacity-40 z-0"></div>
       <div className="top-0 relative h-auto overflow-hidden w-100%">
-        <h2 className="text-[9rem] font-bold tracking-[0.5em] opacity-100 z-2 my-20 mix-blend-overlay text-yellow-200">
+        <h2 className="text-[9rem] font-bold tracking-[0.5em] opacity-100 z-2 my-20 mix-blend-overlay text-yellow-100">
           Techvaganza
         </h2>
       </div>
