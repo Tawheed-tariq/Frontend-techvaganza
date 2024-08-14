@@ -24,7 +24,7 @@ export default function PageLayout({ title, imgUrl, children }) {
             </div>
           </div>
         </div>
-        <div className="w-full md:px-[160px] xl:px-[300px] py-32">{children}</div>
+        <div className="w-full mx-auto px-10 md:px-[160px] xl:px-[340px] py-32">{children}</div>
       </div>
     </>
   );
