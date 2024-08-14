@@ -6,23 +6,26 @@ import { day1Events, day2Events } from "../../../constants/events";
 const Tabview = ({ tab1, tab2 }) => {
   return (
     <Tabs>
-      <TabList className={"flex gap-5 my-3"}>
+      <TabList className={"flex gap-5 my-3 "}>
         <Tab
           className={
-            "px-14 py-3 text-base font-medium text-[#a2834b] bg-white border border-[#a2834b] focus:outline-none focus:ring-4 focus:ring-[#a2834b] hover:bg-[#e3dbcc] hover:transition-[500ms] text-center border-2"
+            "px-14 py-3 text-base font-medium text-[#a2834b] bg-white border-[#a2834b] focus:outline-none hover:bg-[#e3dbcc] text-center border-2 cursor-pointer"
           }
+          selectedClassName="active-tab"
         >
           {tab1}
         </Tab>
         <Tab
+          selectedClassName="active-tab"
           className={
-            "px-14 py-3 text-base font-medium text-[#000000] bg-[#e3dbcc] border border-[#e3dbcc] focus:outline-none focus:ring-4 focus:ring-[#a2834b] hover:border-[#a2834b] hover:text-[#a2834b] hover:transition-[500ms] text-center border-2"
+            "px-14 py-3 text-base font-medium text-[#a2834b] bg-white border-[#a2834b] focus:outline-none hover:bg-[#e3dbcc] text-center border-2 cursor-pointer"
           }
+          
         >
           {tab2}
         </Tab>
       </TabList> 
-      <div className="border border-black px-3 py-4 pb-12">
+      <div className="ShadowSmall mx-2 my-2 px-3 py-4 pb-12">
         <TabPanel>
           {day1Events.map((item, index) => (
             <ScheduleItem
