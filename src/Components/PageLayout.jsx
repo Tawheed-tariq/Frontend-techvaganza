@@ -17,14 +17,14 @@ export default function PageLayout({ title, imgUrl, children }) {
         >
           <div className="w-full h-full flex flex-col">
             <Header/>
-            <div className="px-52 flex items-center font-playfair flex-grow">
+            <div className="px-[380px] flex items-center font-playfair flex-grow">
               <p className="text-secondary font-extrabold text-5xl leading-normal">
                 {title}
               </p>
             </div>
           </div>
         </div>
-        <div className="w-full">{children}</div>
+        <div className="w-full px-[380px] py-32">{children}</div>
       </div>
     </>
   );
