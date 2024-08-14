@@ -1,6 +1,8 @@
 import { createPortal } from "react-dom";
 import { Link } from "react-router-dom";
 
+
+// A portal of resource dropdown menu to be rendered in the root element
 const ResourceDropdownMenu = ({ isDropdownOpen }) => {
   return createPortal(
     <div
