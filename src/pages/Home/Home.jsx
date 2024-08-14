@@ -1,3 +1,4 @@
+import Header from "../../Components/Header";
 
 /* import '../../styles/Home.css'; */
 /* import Header from'./components/Header'; */
@@ -28,7 +29,9 @@ export default function Home(){
 
             <div className="content">
                     <Header />
-                <div >
+          
+                <div>
+                    <h1>home</h1>
                     <Intro/>
                     <About/>
                     <Highlights/>
