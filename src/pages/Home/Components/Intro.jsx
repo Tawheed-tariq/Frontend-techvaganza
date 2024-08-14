@@ -2,7 +2,7 @@ import React from 'react';
 
 function Intro() {
   return (
-    <div className='flex items-center justify-center min-h-screen overflow-hidden text-white'>
+    <div className='flex items-center justify-center overflow-hidden text-white'>
       <div className='max-w-screen-lg h-auto px-6 py-16 text-center'>
         <h1 className="text-4xl md:text-6xl text-primary font-bold pb-4">
           Techvaganza 2024:
