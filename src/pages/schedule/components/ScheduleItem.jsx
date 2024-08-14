@@ -10,13 +10,13 @@ const ScheduleItem = ({title, startTime, endTime, venue, registerUrl, exploreUrl
         <div className="mt-2 lg:mt-0">{venue}</div>
         <div className="mt-2 lg:mt-0 space-x-2">
           <Link to={exploreUrl}>
-            <button className="border border-gray-500 font-bold py-2 px-4 rounded">
-              Explore
+            <button className="px-8 py-1 text-base text-sm rounded font-medium text-white bg-[#a2834b] hover:bg-[#f0ecdf] hover:text-black hover:transition-[500ms] border border-[#a2834b] focus:ring-4 focus:outline-none focus:ring-[#a2834b] text-center">
+              EXPLORE
             </button>
           </Link>
           <Link to={registerUrl}>
-            <button className="border border-gray-500 font-bold py-2 px-4 rounded">
-              Register
+            <button className="px-8 py-1 text-base text-sm rounded font-medium text-white bg-[#a2834b] hover:bg-[#f0ecdf] hover:text-black hover:transition-[500ms] border border-[#a2834b] focus:ring-4 focus:outline-none focus:ring-[#a2834b] text-center">
+              REGISTER
             </button>
           </Link>
         </div>
