@@ -11,11 +11,14 @@ const Header = () => {
   return (
     <header className="p-4">
       <div className="container mx-auto flex justify-between items-center">
+        {/* logo  */}
         <div className="flex items-center">
           <Link to="/" className="text-white font-bold text-xl">
             <img src="/logo.png" className="h-14" alt="Logo" />
           </Link>
         </div>
+
+        {/* links  */}
         <div className="flex items-center space-x-4">
           <Link to="/" className="text-white hover:text-gray-300">
             Home
@@ -23,6 +26,8 @@ const Header = () => {
           <Link to="/events" className="text-white hover:text-gray-300">
             Events
           </Link>
+
+          {/* dropdown links  */}
           <div className="relative">
             <button
               className="text-white hover:text-gray-300 focus:outline-none flex items-center"

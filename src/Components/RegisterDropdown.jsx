@@ -1,6 +1,8 @@
 import { createPortal } from "react-dom";
 import { Link } from "react-router-dom";
 
+
+// A portal for register dropdown menu to be rendered in the root element
 const RegisterDropdown = ({ isDropdownOpen }) => {
   return createPortal(
     <div
