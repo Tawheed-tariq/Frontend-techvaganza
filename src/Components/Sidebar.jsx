@@ -8,6 +8,9 @@ const Sidebar = ({ isOpen, onClose }) => {
   const [isRegisterDropdownOpen, setIsRegisterDropdownOpen] = useState(false);
   const [isResourceDropdownOpen, setIsResourceDropdownOpen] = useState(false);
 
+  if (!isOpen && isRegisterDropdownOpen) setIsRegisterDropdownOpen(false);
+  if (!isOpen && isResourceDropdownOpen) setIsResourceDropdownOpen(false);
+
   const toggleDropdown = (dropdown) => {
     if (dropdown === "register") {
       setIsRegisterDropdownOpen(!isRegisterDropdownOpen);
@@ -61,10 +64,12 @@ const Sidebar = ({ isOpen, onClose }) => {
               } text-sm`}
             />
           </button>
-          <RegisterDropdown
-            isDropdownOpen={isRegisterDropdownOpen}
-            position={{ left: 180, top: 170 }}
-          />
+          {isOpen && isRegisterDropdownOpen && (
+            <RegisterDropdown
+              isDropdownOpen={isRegisterDropdownOpen}
+              position={{ left: 180, top: 170 }}
+            />
+          )}{" "}
         </div>
 
         <div className="relative py-2">
@@ -80,7 +85,10 @@ const Sidebar = ({ isOpen, onClose }) => {
             />
           </button>
           <div className="absolute left-0 w-full bg-neutral-700 bg-opacity-80 rounded-md mt-2">
-            <ResourceDropdown isDropdownOpen={isResourceDropdownOpen} position={{ left: 180, top: 205 }}/>
+            <ResourceDropdown
+              isDropdownOpen={isResourceDropdownOpen}
+              position={{ left: 180, top: 205 }}
+            />
           </div>
         </div>
 
