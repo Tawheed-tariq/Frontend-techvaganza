@@ -24,10 +24,10 @@ const photographyData = {
   ],
   children: (
     <Tabs>
-      <TabList className={"flex gap-5 my-3"}>
+      <TabList className={"flex md:gap-2 my-3"}>
         <Tab
           className={
-            "px-14 py-3 text-base font-medium text-[#a2834b] bg-white border-[#a2834b] focus:outline-none hover:bg-[#e3dbcc] text-center border-2 cursor-pointer"
+            "px-8 md:px-14 py-3 text-base font-medium text-[#a2834b] bg-white border-[#a2834b] focus:outline-none hover:bg-[#e3dbcc] text-center border-2 cursor-pointer"
           }
           selectedClassName="active-tab"
         >
@@ -35,7 +35,7 @@ const photographyData = {
         </Tab>
         <Tab
           className={
-            "px-14 py-3 text-base font-medium text-[#a2834b] bg-white border-[#a2834b] focus:outline-none hover:bg-[#e3dbcc] text-center border-2 cursor-pointer"
+            "px-8 md:px-14 py-3 text-base font-medium text-[#a2834b] bg-white border-[#a2834b] focus:outline-none hover:bg-[#e3dbcc] text-center border-2 cursor-pointer"
           }
           selectedClassName="active-tab"
         >
