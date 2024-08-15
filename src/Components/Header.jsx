@@ -9,8 +9,8 @@ const Header = () => {
   const [ResourceDropdown, setResourceDropdown] = useState(false);
 
   return (
-    <header className="p-4">
-      <div className="container mx-auto flex justify-between items-center">
+    <header className="p-4 linear-bg">
+      <div className="container  mx-auto flex justify-between items-center">
         {/* logo  */}
         <div className="flex items-center">
           <Link to="/" className="text-white font-bold text-xl">
@@ -20,17 +20,17 @@ const Header = () => {
 
         {/* links  */}
         <div className="flex items-center space-x-4">
-          <Link to="/" className="text-white hover:text-gray-300">
+          <Link to="/" className="text-white hover:text-gray-300 underline-animate relative inline-block ">
             Home
           </Link>
-          <Link to="/events" className="text-white hover:text-gray-300">
+          <Link to="/events" className="text-white hover:text-gray-300 underline-animate relative inline-block">
             Events
           </Link>
 
           {/* dropdown links  */}
-          <div className="relative">
+          <div className="text-white hover:text-gray-300 underline-animate relative inline-block ">
             <button
-              className="text-white hover:text-gray-300 focus:outline-none flex items-center"
+              className="focus:outline-none flex items-center"
               onClick={() => setIsDropdownOpen(!isDropdownOpen)}
             >
               Register
@@ -41,9 +41,9 @@ const Header = () => {
               />
             </button>
           </div>
-          <div className="relative">
+          <div className="text-white hover:text-gray-300 underline-animate relative inline-block ">
             <button
-              className="text-white hover:text-gray-300 focus:outline-none flex items-center"
+              className="focus:outline-none flex items-center"
               onClick={() => setResourceDropdown(!ResourceDropdown)}
             >
               Resources
@@ -54,7 +54,7 @@ const Header = () => {
               />
             </button>
           </div>
-          <Link to="/contact" className="text-white hover:text-gray-300">
+          <Link to="/contact" className="text-white hover:text-gray-300 underline-animate relative inline-block ">
             Contact
           </Link>
         </div>

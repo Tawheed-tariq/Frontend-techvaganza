@@ -24,7 +24,7 @@ const Footer = () => {
           <div className="mb-4">
             <a
               href="mailto:techvaganza@nitsri.ac.in"
-              className="text-lg hover:underline hover:text-primary font-averia"
+              className="text-xl hover:text-primary underline-animate relative inline-block font-averia"
             >
               techvaganza@nitsri.ac.in
             </a>
@@ -38,7 +38,7 @@ const Footer = () => {
             >
               <FaInstagram
                 size={25}
-                className="text-primary hover:text-white"
+                className="text-primary hover:text-white transition duration-300"
               />
             </a>
             <a
@@ -46,7 +46,7 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaYoutube size={25} className="text-primary  hover:text-white" />
+              <FaYoutube size={25} className="text-primary hover:text-white transition duration-300" />
             </a>
             <a
               href="https://www.linkedin.com/company/techvaganza-nit-srinagar/"
@@ -55,7 +55,7 @@ const Footer = () => {
             >
               <FaLinkedin
                 size={25}
-                className="text-primary  hover:text-white"
+                className="text-primary hover:text-white transition duration-300"
               />
             </a>
           </div>

@@ -27,21 +27,23 @@ const photographyData = {
       <TabList className={"flex gap-5 my-3"}>
         <Tab
           className={
-            "border border-black cursor-pointer bg-secondary px-5 py-2 text-lg focus:outline-none font-medium"
+            "px-14 py-3 text-base font-medium text-[#a2834b] bg-white border-[#a2834b] focus:outline-none hover:bg-[#e3dbcc] text-center border-2 cursor-pointer"
           }
+          selectedClassName="active-tab"
         >
           Rules and prizes
         </Tab>
         <Tab
           className={
-            "border border-black cursor-pointer bg-secondary px-5 py-2 text-lg focus:outline-none font-medium"
+            "px-14 py-3 text-base font-medium text-[#a2834b] bg-white border-[#a2834b] focus:outline-none hover:bg-[#e3dbcc] text-center border-2 cursor-pointer"
           }
+          selectedClassName="active-tab"
         >
           Judging Criteria
         </Tab>
       </TabList>
 
-      <div className={"border border-black px-3 py-4"}>
+      <div className="ShadowSmall mx-2 my-2 px-3 py-4 pb-12">
         <TabPanel>Rules and prizes</TabPanel>
         <TabPanel>Judging Criteria</TabPanel>
       </div>
