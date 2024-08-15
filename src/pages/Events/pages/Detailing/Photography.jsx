@@ -22,33 +22,63 @@ const photographyData = {
       phone: "+91 9325363505",
     },
   ],
-  children: (
-    <Tabs>
-      <TabList className={"flex md:gap-2 my-3"}>
-        <Tab
-          className={
-            "px-8 md:px-14 py-3 text-base font-medium text-[#a2834b] bg-white border-[#a2834b] focus:outline-none hover:bg-[#e3dbcc] text-center border-2 cursor-pointer"
-          }
-          selectedClassName="active-tab"
-        >
-          Rules and prizes
-        </Tab>
-        <Tab
-          className={
-            "px-8 md:px-14 py-3 text-base font-medium text-[#a2834b] bg-white border-[#a2834b] focus:outline-none hover:bg-[#e3dbcc] text-center border-2 cursor-pointer"
-          }
-          selectedClassName="active-tab"
-        >
-          Judging Criteria
-        </Tab>
-      </TabList>
+  rules: [
+    "The event will be live from 8:00 a.m. to 8:00 p.m. on 03/11/2023 and 04/11/2023.",
+    "Files are to be uploaded in the google form provided.",
+    "Winners will be declared at the end of each day.",
+    "Decisions by the judges will be final.",
+    "Photos are required to be clicked during the commencement of the event.",
+    "The organizing committee may ask participants to provide details of the image submitted which can be disqualified at any point if found misleading.",
+    "Photography devices have to be arranged by the participants on their levels. The organizing team holds no responsibility for the same.",
+    "Rang-E-Chinar holds the copyright for uploading suitable images on its website and official handles.",
+    "Acts of indiscipline will lead to disqualification from the event.",
+  ],
+  prizes: [
+    "First Prize: Merchandise with Certificate",
+    "Second Prize: Merchandise with Certificate",
+    "Third Prize: Merchandise with Certificate",
+    "All participants will get E-Certificates",
+  ],
+  judgingCriteria: [
+    "Winners will be decided by the judges only.",
+    "Markings will be under various sections:",
+    "Beauty of the image",
+    "Orientation of the image",
+    "Clarity of the image will be considered",
+    "Placement of the subject in the image",
+    "Technical Correctness",
+    "Marks awarded by the judges will be confidential",
+    "Organizers hold the authority to make changes in the rulebook at any time of the event",
+  ],
 
-      <div className="ShadowSmall mx-2 my-2 px-3 py-4 pb-12">
-        <TabPanel>Rules and prizes</TabPanel>
-        <TabPanel>Judging Criteria</TabPanel>
-      </div>
-    </Tabs>
-  ),
+//   children: (
+//     <Tabs>
+//       <TabList className={"flex md:gap-2 my-3"}>
+//         <Tab
+//           className={
+//             "px-8 md:px-14 py-3 text-base font-medium text-[#a2834b] bg-white border-[#a2834b] focus:outline-none hover:bg-[#e3dbcc] text-center border-2 cursor-pointer"
+//           }
+//           selectedClassName="active-tab"
+//         >
+//           Rules and prizes
+//         </Tab>
+//         <Tab
+//           className={
+//             "px-8 md:px-14 py-3 text-base font-medium text-[#a2834b] bg-white border-[#a2834b] focus:outline-none hover:bg-[#e3dbcc] text-center border-2 cursor-pointer"
+//           }
+//           selectedClassName="active-tab"
+//         >
+//           Judging Criteria
+//         </Tab>
+//       </TabList>
+
+//       <div className="ShadowSmall mx-2 my-2 px-3 py-4 pb-12">
+//         <TabPanel>Rules and prizes</TabPanel>
+//         <TabPanel>Judging Criteria</TabPanel>
+//       </div>
+//     </Tabs>
+//   ),
+
 };
 
 export default function Photography() {
