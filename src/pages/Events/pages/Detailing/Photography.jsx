@@ -50,6 +50,35 @@ const photographyData = {
     "Marks awarded by the judges will be confidential",
     "Organizers hold the authority to make changes in the rulebook at any time of the event",
   ],
+
+//   children: (
+//     <Tabs>
+//       <TabList className={"flex md:gap-2 my-3"}>
+//         <Tab
+//           className={
+//             "px-8 md:px-14 py-3 text-base font-medium text-[#a2834b] bg-white border-[#a2834b] focus:outline-none hover:bg-[#e3dbcc] text-center border-2 cursor-pointer"
+//           }
+//           selectedClassName="active-tab"
+//         >
+//           Rules and prizes
+//         </Tab>
+//         <Tab
+//           className={
+//             "px-8 md:px-14 py-3 text-base font-medium text-[#a2834b] bg-white border-[#a2834b] focus:outline-none hover:bg-[#e3dbcc] text-center border-2 cursor-pointer"
+//           }
+//           selectedClassName="active-tab"
+//         >
+//           Judging Criteria
+//         </Tab>
+//       </TabList>
+
+//       <div className="ShadowSmall mx-2 my-2 px-3 py-4 pb-12">
+//         <TabPanel>Rules and prizes</TabPanel>
+//         <TabPanel>Judging Criteria</TabPanel>
+//       </div>
+//     </Tabs>
+//   ),
+
 };
 
 export default function Photography() {

@@ -6,7 +6,7 @@ import { day1Events, day2Events } from "../../../constants/events";
 const Tabview = ({ tab1, tab2 }) => {
   return (
     <Tabs>
-      <TabList className={"flex gap-5 my-3 "}>
+      <TabList className={"flex md:gap-2 my-3 "}>
         <Tab
           className={
             "px-14 py-3 text-base font-medium text-[#a2834b] bg-white border-[#a2834b] focus:outline-none hover:bg-[#e3dbcc] text-center border-2 cursor-pointer"
