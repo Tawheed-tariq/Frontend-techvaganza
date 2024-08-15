@@ -30,7 +30,7 @@ const Header = () => {
         className="py-4 px-28 w-full"
         style={{
           background:
-            "linear-gradient(to bottom, #02170f, 40% , rgba(0, 0, 0, 0))",
+            "linear-gradient(to bottom, rgba(18, 18, 18, 0.8), 40% , rgba(0, 0, 0, 0))",
         }}
       >
         <div className="flex flex-row justify-between items-center container mx-auto ">
@@ -89,7 +89,10 @@ const Header = () => {
                   } text-sm`}
                 />
               </button>
-              <ResourceDropdown isDropdownOpen={isResourceDropdownOpen} position={{ right: 80, top: 68 }}/>
+              <ResourceDropdown
+                isDropdownOpen={isResourceDropdownOpen}
+                position={{ right: 80, top: 68 }}
+              />
             </div>
 
             <Link
