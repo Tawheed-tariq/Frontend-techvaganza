@@ -1,6 +1,6 @@
-import '../App.css'
-import Header from './Header'
-import Footer from './Footer'
+import "../App.css";
+import Header from "./Header";
+import Footer from "./Footer";
 export default function PageLayout({ title, imgUrl, children }) {
   return (
     <>
@@ -17,7 +17,7 @@ export default function PageLayout({ title, imgUrl, children }) {
           className={`bg-cover bg-top h-[500px]`}
         >
           <div className="w-full h-full flex flex-col">
-            <Header/>
+            <Header />
             <div className="px-10 md:px-[160px] lg:px-[180px] lg2:px-[220px] xl:px-[300px] xl2:px-[340px] flex items-center font-playfair flex-grow">
               <p className="text-secondary font-extrabold text-5xl leading-normal">
                 {title}
@@ -25,8 +25,10 @@ export default function PageLayout({ title, imgUrl, children }) {
             </div>
           </div>
         </div>
-        <div className="w-full mx-auto px-4 md:px-[160px] lg:px-[180px] lg2:px-[220px] xl:px-[300px] xl2:px-[340px] py-20 md:py-28 lg:py-32">{children}</div>
-        <Footer/>
+        <div className="w-full mx-auto px-4 md:px-[160px] lg:px-[180px] lg2:px-[220px] xl:px-[300px] xl2:px-[340px] py-20 md:py-28 lg:py-32">
+          {children}
+        </div>
+        <Footer />
       </div>
     </>
   );

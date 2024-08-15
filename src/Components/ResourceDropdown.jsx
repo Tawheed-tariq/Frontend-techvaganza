@@ -35,7 +35,7 @@ const ResourceDropdownMenu = ({ isDropdownOpen, position }) => {
         Bronche
       </Link>
     </div>,
-    document.getElementById("dropdown-root"),
+    document.getElementById("dropdown-root")
   );
 };
 

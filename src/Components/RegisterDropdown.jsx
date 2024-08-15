@@ -9,7 +9,7 @@ const validatePositionProps = (props, propName, componentName) => {
 
   if (numericProps.length < 2) {
     return new Error(
-      `Invalid prop '${propName}' supplied to '${componentName}'. At least two of 'top', 'bottom', 'left', or 'right' must be provided as numbers.`,
+      `Invalid prop '${propName}' supplied to '${componentName}'. At least two of 'top', 'bottom', 'left', or 'right' must be provided as numbers.`
     );
   }
 
@@ -57,13 +57,13 @@ const RegisterDropdown = ({ isDropdownOpen, position }) => {
         Committee Register
       </Link>
     </div>,
-    document.getElementById("dropdown-root"),
+    document.getElementById("dropdown-root")
   );
 };
 
 RegisterDropdown.propTypes = {
   isDropdownOpen: PropTypes.bool.isRequired,
-  position: validatePositionProps
+  position: validatePositionProps,
 };
 
 export default RegisterDropdown;

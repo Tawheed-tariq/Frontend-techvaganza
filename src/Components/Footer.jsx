@@ -14,10 +14,7 @@ const Footer = () => {
       <div className="absolute h-auto left-0 right-0 z-10 flex flex-col justify-around items-center mt-28">
         <div className="container mx-auto text-center">
           <div className="relative z-10 mb-4 overflow-visible text-3xl md:text-5xl lg:text-8xl">
-            <a
-              href="/"
-              className="text-5xl md:text-7xl lg:text-8xl font-bold"
-            >
+            <a href="/" className="text-5xl md:text-7xl lg:text-8xl font-bold">
               Techvaganza
             </a>
           </div>
@@ -47,7 +44,10 @@ const Footer = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FaYoutube size={24} className="text-primary hover:text-white transition duration-300" />
+              <FaYoutube
+                size={24}
+                className="text-primary hover:text-white transition duration-300"
+              />
             </a>
             <a
               href="https://www.linkedin.com/company/techvaganza-nit-srinagar/"
