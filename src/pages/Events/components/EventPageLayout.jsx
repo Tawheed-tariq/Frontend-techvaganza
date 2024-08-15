@@ -2,7 +2,7 @@ import EventCard from "./EventCard";
 const EventsPageLayout = ({events}) => {
     return (
       <>
-        <div className="font-playfair">
+        <div className="font-playfair mb-4">
           <p className="text-base text-secondary text-opacity-80">Explore</p>
           <p className="text-primary font-extrabold text-5xl leading-normal">
             Event List

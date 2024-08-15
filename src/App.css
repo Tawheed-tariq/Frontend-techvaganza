@@ -17,6 +17,7 @@
 
 body{
     background: linear-gradient(135deg, #000E21 0%, #235347 100%);
+    overflow-x: hidden;    
 }
 
 .linear-bg{
@@ -76,6 +77,7 @@ body{
     backdrop-filter: blur(10px); /* Blur effect */
     -webkit-backdrop-filter: blur(10px); /* Blur effect for Safari */
     z-index: 1; /* Above backgrounds, below content */
+    overflow-x: hidden;
 }
 
 /* Content Layer */
