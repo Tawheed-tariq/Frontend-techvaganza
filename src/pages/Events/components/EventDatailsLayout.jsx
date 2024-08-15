@@ -37,8 +37,8 @@ export default function EventDetailsLayout({ title, imgUrl, data }) {
             ))}
           </ul>
         </div>
-
-        {/* <div>{data.children}</div> */}
+        
+        {/* Tabs */}
         <div>
         <Tabs>
           <TabList className="flex gap-5 my-3">

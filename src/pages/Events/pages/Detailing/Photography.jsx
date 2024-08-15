@@ -22,34 +22,6 @@ const photographyData = {
       phone: "+91 9325363505",
     },
   ],
-  // children: (
-  //   <Tabs>
-  //     <TabList className={"flex gap-5 my-3"}>
-  //       <Tab
-  //         className={
-  //           "px-14 py-3 text-base font-medium text-[#a2834b] bg-white border-[#a2834b] focus:outline-none hover:bg-[#e3dbcc] text-center border-2 cursor-pointer"
-  //         }
-  //         selectedClassName="active-tab"
-  //       >
-  //         Rules and prizes
-  //       </Tab>
-  //       <Tab
-  //         className={
-  //           "px-14 py-3 text-base font-medium text-[#a2834b] bg-white border-[#a2834b] focus:outline-none hover:bg-[#e3dbcc] text-center border-2 cursor-pointer"
-  //         }
-  //         selectedClassName="active-tab"
-  //       >
-  //         Judging Criteria
-  //       </Tab>
-  //     </TabList>
-
-  //     <div className="ShadowSmall mx-2 my-2 px-3 py-4 pb-12">
-  //       <TabPanel>Rules and prizes</TabPanel>
-  //       <TabPanel>Judging Criteria</TabPanel>
-  //     </div>
-  //   </Tabs>
-  // ),
-
   rules: [
     "The event will be live from 8:00 a.m. to 8:00 p.m. on 03/11/2023 and 04/11/2023.",
     "Files are to be uploaded in the google form provided.",
