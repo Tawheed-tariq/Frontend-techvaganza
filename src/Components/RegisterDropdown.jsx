@@ -1,5 +1,20 @@
+import PropTypes from "prop-types";
 import { createPortal } from "react-dom";
 import { Link } from "react-router-dom";
+
+const validatePositionProps = (props, propName, componentName) => {
+  const position = props[propName];
+  const keys = ["top", "bottom", "left", "right"];
+  const numericProps = keys.filter((key) => typeof position[key] === "number");
+
+  if (numericProps.length < 2) {
+    return new Error(
+      `Invalid prop '${propName}' supplied to '${componentName}'. At least two of 'top', 'bottom', 'left', or 'right' must be provided as numbers.`,
+    );
+  }
+
+  return null;
+};
 
 const RegisterDropdown = ({ isDropdownOpen, position }) => {
   const { top, bottom, left, right } = position || {}; // Destructure position props
@@ -44,6 +59,11 @@ const RegisterDropdown = ({ isDropdownOpen, position }) => {
     </div>,
     document.getElementById("dropdown-root"),
   );
+};
+
+RegisterDropdown.propTypes = {
+  isDropdownOpen: PropTypes.bool.isRequired,
+  position: validatePositionProps
 };
 
 export default RegisterDropdown;
