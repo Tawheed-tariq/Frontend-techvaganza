@@ -171,3 +171,26 @@ body{
     opacity: 1;
     transform: scale(1.05);
 }
+/* Example CSS for responsive-image class */
+
+.responsive-image {
+    /* Ensure images scale nicely within their containers */
+    width: 100%;
+    height: auto;
+}
+
+/* Additional styling for smaller screens */
+@media (max-width: 768px) {
+    .responsive-image {
+        /* Adjust image size or other properties for smaller screens */
+        width: 100%;
+        margin: 0 auto; /* Center the image */
+    }
+}
+/* ExcitingEvents.css */
+.exciting-events-container {
+    background-image: url('/1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
