@@ -42,22 +42,22 @@ const Sidebar = ({ isOpen, onClose }) => {
           className="text-gray-200 hover:text-primary text-xl py-2"
           onClick={onClose}
         >
-          Home
+          <p className="underline-animate relative inline-block">Home</p>
         </Link>
         <Link
           to="/events"
-          className="text-gray-200 hover:text-primary text-xl py-2 hover:underline"
+          className="text-gray-200 hover:text-primary text-xl py-2"
           onClick={onClose}
         >
-          Events
+          <p className="underline-animate relative inline-block">Events</p>
         </Link>
 
-        <div className="relative py-2">
+        <div className="py-2">
           <button
-            className="text-gray-200 hover:text-primary flex items-center text-xl hover:underline"
+            className="text-gray-200 hover:text-primary flex items-center text-xl "
             onClick={() => toggleDropdown("register")}
           >
-            Register
+            <p className="underline-animate relative inline-block">Register</p>
             <FaChevronDown
               className={`ml-1 transition-transform duration-200 ${
                 isRegisterDropdownOpen ? "transform rotate-180" : ""
@@ -72,12 +72,12 @@ const Sidebar = ({ isOpen, onClose }) => {
           )}{" "}
         </div>
 
-        <div className="relative py-2">
+        <div className="py-2">
           <button
-            className="text-white hover:text-primary flex items-center text-xl hover:underline"
+            className="text-white hover:text-primary flex items-center text-xl"
             onClick={() => toggleDropdown("resources")}
           >
-            Resources
+            <p className="underline-animate relative inline-block">Resources</p>
             <FaChevronDown
               className={`ml-1 transition-transform duration-200 ${
                 isResourceDropdownOpen ? "transform rotate-180" : ""
@@ -94,10 +94,10 @@ const Sidebar = ({ isOpen, onClose }) => {
 
         <Link
           to="/contact"
-          className="text-gray-200 hover:text-primary text-xl py-2"
+          className="text-gray-200 hover:text-primary flex text-xl py-2"
           onClick={onClose}
         >
-          Contact
+          <p className="underline-animate relative inline-block">Contact</p>
         </Link>
         {/* Add more links as needed */}
       </div>

@@ -27,7 +27,7 @@ const Header = () => {
   return (
     <>
       <header
-        className="py-4 px-28 w-full"
+        className="py-4 px-4 md:px-28 w-full"
         style={{
           background:
             "linear-gradient(to bottom, rgba(18, 18, 18, 0.8), 40% , rgba(0, 0, 0, 0))",
@@ -48,20 +48,20 @@ const Header = () => {
           <div className="hidden md:flex items-center md:space-x-14 large:space-x-16">
             <Link
               to="/"
-              className="text-white hover:text-primary hover:underline text-xl"
+              className="text-white hover:text-primary underline-animate text-xl relative inline-block"
             >
               Home
             </Link>
             <Link
               to="/events"
-              className="text-white hover:text-primary text-xl hover:underline"
+              className="text-white hover:text-primary text-xl underline-animate relative inline-block"
             >
               Events
             </Link>
 
-            <div className="relative">
+            <div className="underline-animate text-primary relative inline-block">
               <button
-                className="text-white hover:text-primary flex items-center text-xl hover:underline"
+                className="text-white hover:text-primary flex items-center text-xl"
                 onClick={() => toggleDropdown("register")}
               >
                 Register
@@ -77,9 +77,9 @@ const Header = () => {
               />
             </div>
 
-            <div className="relative">
+            <div className="underline-animate text-primary relative inline-block">
               <button
-                className="text-white hover:text-primary flex items-center text-xl hover:underline"
+                className="text-white hover:text-primary flex items-center text-xl "
                 onClick={() => toggleDropdown("resources")}
               >
                 Resources
@@ -97,7 +97,7 @@ const Header = () => {
 
             <Link
               to="/contact"
-              className="text-white hover:text-primary text-xl  hover:underline"
+              className="text-white hover:text-primary text-xl underline-animate relative inline-block"
             >
               Contact
             </Link>
