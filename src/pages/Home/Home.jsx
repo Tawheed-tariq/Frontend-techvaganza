@@ -3,7 +3,7 @@ import Footer from "../../Components/Footer";
 
 import Intro from "./Components/Intro";
 import About from "./Components/About";
-import Highlights from "./Components/Highlights";
+import Highlights from "./Components/EventsLineup";
 import Sponsors from "./Components/Sponsors";
 import Events from "./Components/Events";
 
