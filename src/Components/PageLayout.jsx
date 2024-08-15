@@ -1,5 +1,6 @@
 import '../App.css'
 import Header from './Header'
+import Footer from './Footer'
 export default function PageLayout({ title, imgUrl, children }) {
   return (
     <>
@@ -13,11 +14,11 @@ export default function PageLayout({ title, imgUrl, children }) {
       <div className="content">
         <div
           style={{ backgroundImage: `url(${imgUrl})` }}
-          className={`bg-cover bg-no-repeat h-[480px]`}
+          className={`bg-cover bg-top h-[480px]`}
         >
           <div className="w-full h-full flex flex-col">
             <Header/>
-            <div className="px-[380px] flex items-center font-playfair flex-grow">
+            <div className="px-10 md:px-[160px] xl:px-[340px] flex items-center font-playfair flex-grow">
               <p className="text-secondary font-extrabold text-5xl leading-normal">
                 {title}
               </p>
@@ -25,6 +26,7 @@ export default function PageLayout({ title, imgUrl, children }) {
           </div>
         </div>
         <div className="w-full mx-auto px-10 md:px-[160px] xl:px-[340px] py-32">{children}</div>
+        <Footer/>
       </div>
     </>
   );
