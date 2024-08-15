@@ -71,7 +71,10 @@ const Header = () => {
                   } text-sm`}
                 />
               </button>
-              <RegisterDropdown isDropdownOpen={isRegisterDropdownOpen} />
+              <RegisterDropdown
+                isDropdownOpen={isRegisterDropdownOpen}
+                position={{ right: 250, top: 68 }}
+              />
             </div>
 
             <div className="relative">
@@ -86,7 +89,7 @@ const Header = () => {
                   } text-sm`}
                 />
               </button>
-              <ResourceDropdown isDropdownOpen={isResourceDropdownOpen} />
+              <ResourceDropdown isDropdownOpen={isResourceDropdownOpen} position={{ right: 80, top: 68 }}/>
             </div>
 
             <Link

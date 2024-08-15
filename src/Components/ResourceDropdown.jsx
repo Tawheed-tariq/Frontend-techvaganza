@@ -1,17 +1,24 @@
 import { createPortal } from "react-dom";
 import { Link } from "react-router-dom";
 
-const ResourceDropdownMenu = ({ isDropdownOpen }) => {
+const ResourceDropdownMenu = ({ isDropdownOpen, position }) => {
+  const { top, bottom, left, right } = position || {}; // Destructure position props
   return createPortal(
     <div
-      className={`absolute right-20 top-16 w-48 bg-white backdrop-blur-lg rounded-md shadow-lg py-1 z-50 transition-all duration-300 ease-in-out ${
+      className={`absolute ${right ? "right-0" : left ? "left-0" : ""} ${
+        bottom ? "bottom-0" : top ? "top-0" : ""
+      } w-48 bg-white backdrop-blur-lg rounded-md shadow-lg py-1 z-50 transition-all duration-300 ease-in-out ${
         isDropdownOpen
           ? "opacity-100 transform translate-y-0"
           : "opacity-0 transform -translate-y-2 pointer-events-none"
       }`}
       style={{
+        top: top || undefined,
+        bottom: bottom || undefined,
+        left: left || undefined,
+        right: right || undefined,
         zIndex: 9999,
-        background: "rgba(255, 255, 255, 0.1)", // Custom background with 10% opacity
+        background: "rgba(225, 225, 225, 0.1)",
         border: "1px solid rgba(255, 255, 255, 0.2)", // Custom border with 20% opacity
       }}
     >

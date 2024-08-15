@@ -61,7 +61,10 @@ const Sidebar = ({ isOpen, onClose }) => {
               } text-sm`}
             />
           </button>
-          <RegisterDropdown isDropdownOpen={isRegisterDropdownOpen} />
+          <RegisterDropdown
+            isDropdownOpen={isRegisterDropdownOpen}
+            position={{ left: 180, top: 170 }}
+          />
         </div>
 
         <div className="relative py-2">
@@ -76,7 +79,9 @@ const Sidebar = ({ isOpen, onClose }) => {
               } text-sm`}
             />
           </button>
-          <ResourceDropdown isDropdownOpen={isResourceDropdownOpen} />
+          <div className="absolute left-0 w-full bg-neutral-700 bg-opacity-80 rounded-md mt-2">
+            <ResourceDropdown isDropdownOpen={isResourceDropdownOpen} position={{ left: 180, top: 205 }}/>
+          </div>
         </div>
 
         <Link
