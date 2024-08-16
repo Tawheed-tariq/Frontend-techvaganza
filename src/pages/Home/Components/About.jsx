@@ -7,15 +7,15 @@ function About() {
         id='about-box' 
         className='p-10 mt-24 mb-24  sm:p-12 md:p-12 md:pr-10 bg-white w-4/5  md:w-3/5 sm:w-4/5'>
         <div>
-          <p className='text-grayText text-xs sm:text-sm font-lora font-semibold'>
+          <p className='text-[#7A7A7A] text-xs sm:text-sm font-lora font-semibold'>
             NIT Srinagar's Annual Cultural Fest
           </p>
-          <h2 className='text-introBtnColor text-3xl   sm:text-4xl md:text-5xl overflow-hidden font-semibold font-lora mt-2 mb-6 sm:mb-8 md:mb-12'>
+          <h2 className='text-[#A2834B] text-3xl   sm:text-4xl md:text-5xl overflow-hidden font-semibold font-lora mt-2 mb-6 sm:mb-8 md:mb-12'>
             RANG-E-CHINAR
           </h2>
         </div>
         <div id='about-description'>
-          <p className='text-entryDescription text-xl sm:text-base md:text-base font-lora'>
+          <p className='text-[#1E1403] text-xl sm:text-base md:text-base font-lora'>
             The Annual Cultural Fest at the National Institute of Technology,
             Srinagar, aptly named "Rang-e-Chinar," is a dazzling spectacle of
             talent and creativity that leaves no stone unturned in showcasing

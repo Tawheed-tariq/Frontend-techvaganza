@@ -8,29 +8,20 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'hero-background': "url('/hero.png')",
-        'about-background':"url('/1.png')",
+
       },
 
       colors: {
-        primary: '#64ECC9',
-        secondary: '#EDE7E7',
-        highlightColor: '#64ECC966',
-        eventBorder: '#FFFFFF4D',
+     
         gray: {
           light: '#E5E5E5',
           DEFAULT: '#3C4857',
           dark: '#888',
         },
-        welcometextColor:'#C8A25D',
-        welcometextAfter:' #504125',
-        introBtnColor:'  #A2834B',
-        grayText:'#7A7A7A',
-        entryDescription:'#1E1403',
+      
       },
       
       borderRadius:{
-      30:'30px',
       customBrown: '#A2834B'
       },
       boxShadow: {
@@ -60,9 +51,7 @@ export default {
          'cinzel-deco':['roboto','serif']
 
       },
-      minWidth: {
-        '150': '150px', 
-      },
+     
     },
     screens: {
       xs:"480px",

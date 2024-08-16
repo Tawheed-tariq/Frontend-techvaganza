@@ -55,11 +55,11 @@ function Intro() {
           <sup className='font-lora text-white text-xl md:text-2xl'>st </sup> 
           Sep 2024
         </div>
-        <h2 id='eventTitle' className='event-title text-center p-2 md:p-5 m-0 text-5xl sm:text-7xl md:text-8xl overflow-hidden font-cinzel-deco bg-gradient-to-b to-welcometextColor from-welcometextAfter bg-clip-text text-transparent font-bold'>
+        <h2 id='eventTitle' className='event-title text-center p-2 md:p-5 m-0 text-5xl sm:text-7xl md:text-8xl overflow-hidden font-cinzel-deco bg-gradient-to-b to-[#C8A25D] from-[#504125] bg-clip-text text-transparent font-bold'>
           TECHVAGANZA
         </h2>
         <div id='timerContainer' className='timer-container mt-6 md:mt-10 flex justify-center'>
-          <div className='w-full min-w-150 mb-7 px-4 md:px-4 lg:px-40 flex flex-wrap justify-between text-white font-bold overflow-hidden'>
+          <div className='w-full min-w-[150px] mb-7 px-4 md:px-4 lg:px-40 flex flex-wrap justify-between text-white font-bold overflow-hidden'>
             <div id='daysTimer' className='timer-item text-center'>
               <div className='block text-6xl md:text-9xl font-semibold leading-none overflow-hidden '>{timeLeft.days}</div>
               <div className='timer-label block text-xl md:text-3xl font-light overflow-hidden'>DAYS</div>
@@ -80,10 +80,10 @@ function Intro() {
         </div>
         <div id='buttonContainer' className='button-container text-center flex flex-col justify-center md:flex-row gap-4 md:gap-7 min-w-24 mt-20 md:mt-32'>
           <Link>
-            <button id='instituteRegistrationButton' className='button bg-introBtnColor rounded-30 text-black font-semibold py-4 px-10 md:py-4 md:px-10 mb-4 font-lora'>Institute Registration</button> 
+            <button id='instituteRegistrationButton' className='button bg-[#A2834B] rounded-[30px] text-black font-semibold py-4 px-10 md:py-4 md:px-10 mb-4 font-lora'>Institute Registration</button> 
           </Link>
           <Link>
-            <button id='attendeeRegistrationButton' className='button bg-introBtnColor rounded-30 text-black font-semibold py-4 px-10 mb-4 font-lora'>Attendee Registration</button> 
+            <button id='attendeeRegistrationButton' className='button bg-[#A2834B] rounded-[30px] text-black font-semibold py-4 px-10 mb-4 font-lora'>Attendee Registration</button> 
           </Link>
         </div>
       </div>
