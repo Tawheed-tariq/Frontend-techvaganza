@@ -6,6 +6,7 @@ import Intro from "./Components/Intro";
 import About from "./Components/About";
 import MediaSidebar from "./Components/stickyScroll";
 
+import Gallery from "./Components/Gallery";
 import Highlights from "./Components/EventsLineup";
 
 
@@ -23,9 +24,7 @@ export default function Home() {
           <Intro />
           <About />
           <EventsSection />
-        
-         {/* <Highlights /> */}
-         
+        <Gallery/>
         </div>
         <Footer />
       </div>

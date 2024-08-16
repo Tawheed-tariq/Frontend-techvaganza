@@ -8,11 +8,22 @@ export default {
   theme: {
     extend: {
       colors: {
+
+         customBrown: '#A2834B',
+        gray: {
+          light: '#E5E5E5',
+          DEFAULT: '#3C4857',
+          dark: '#888',
+          
+        },
+      
+
         'primary': '#3b5704',
         'secondary': '#EDE7E7',
         'highlightColor': '#64ECC966',
         'eventBorder': '#FFFFFF4D',
         'background' : '#e7febc'
+
       },
       fontFamily: {
         playfair: ['Playfair Display', 'serif'],
