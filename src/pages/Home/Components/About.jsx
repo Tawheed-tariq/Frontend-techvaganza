@@ -1,8 +1,8 @@
 import React from 'react';
-
+import Highlights from './EventsLineup'
 function About() {
   return (
-    <div className='bg-about-background  bg-cover bg-center backdrop-filter backdrop-brightness-100 min-h-[80vh] xs:min-h-[90vh] sm:min-h-screen flex justify-center items-center'>
+    <div className=" bg-cover bg-center backdrop-filter backdrop-brightness-100 min-h-[80vh] xs:min-h-[90vh] sm:min-h-screen flex flex-col justify-center items-center">
       <div 
         id='about-box' 
         className='p-10 mt-24 mb-24  sm:p-12 md:p-12 md:pr-10 bg-white w-4/5  md:w-3/5 sm:w-4/5'>
@@ -31,6 +31,9 @@ function About() {
             attend.
           </p>
         </div>
+      </div>
+      <div>
+        <Highlights/>
       </div>
     </div>
   );

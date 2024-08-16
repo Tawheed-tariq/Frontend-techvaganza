@@ -26,13 +26,10 @@ export default function Home() {
       <div className="content">
 
         <div className="py-10">
-          <EventsSection />
           <Intro />
-          <About />
           
         
-          <Highlights />
-         
+
         </div>
         <Footer />
       </div>

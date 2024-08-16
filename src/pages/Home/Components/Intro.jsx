@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Header from '../../../Components/Header';
+import About from './About';
+
 import { Link } from 'react-router-dom';
 
 function Intro() {
@@ -39,11 +41,13 @@ function Intro() {
   });
 
   return (
-    <div className='bg-hero-background bg-cover bg-center backdrop-filter backdrop-brightness-100'>
-      <div>
+    <div className="bg-[url('/public/5.png')]  relative bg-cover bg-center bg-no-repeat ">
+            <div className="absolute inset-0 bg-black opacity-40"></div> {/* Dark overlay */}
+
+      <div className='relative z-10'>
         <Header />
       </div>
-      <div id='introText' className='min-h-screen pt-32 p-7 md:p-32'>
+      <div id='introText' className='relative min-h-screen pt-32 p-7 md:p-32'>
         <div id='dateText' className='date-text text-white text-2xl md:text-4xl text-center overflow-hidden xs:whitespace-nowrap'>
           20 
           <sup className='font-lora text-white text-xl md:text-2xl'>th </sup>  
@@ -83,6 +87,11 @@ function Intro() {
           </Link>
         </div>
       </div>
+      <div>
+    <About/>
+      </div>
+      
+
     </div>
   );
 }
