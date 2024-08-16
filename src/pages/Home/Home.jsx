@@ -4,7 +4,7 @@ import Footer from "../../Components/Footer";
 import EventsSection from "./Components/Events";
 import Intro from "./Components/Intro";
 import About from "./Components/About";
-
+import MediaSidebar from "./Components/stickyScroll";
 
 import Highlights from "./Components/EventsLineup";
 
@@ -32,6 +32,7 @@ export default function Home() {
           
         
           <Highlights />
+          <MediaSidebar />
          
         </div>
         <Footer />
