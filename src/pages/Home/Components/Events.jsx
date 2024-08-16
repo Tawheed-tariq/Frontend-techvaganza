@@ -59,7 +59,7 @@ EventCard.propTypes = {
 // EventsSection Component
 const EventsSection = () => {
   return (
-    <div className="container  flex flex-col items-center p-10" id="exciting-events">
+    <div className="container  flex flex-col p-10" id="exciting-events">
       {/* Section Header */}
       <div className="text-left pb-5">
         <p className="text-gray pt-[2%]">Just the best</p>
@@ -67,7 +67,7 @@ const EventsSection = () => {
       </div>
 
       {/* Event Cards Container */}
-      <div className="the-complete-lineup relative flex flex-wrap justify-center h-auto">
+      <div className="the-complete-lineup relative flex flex-wrap justify-center h-auto items-center">
         {/* Example of EventCard usage */}
 
         <EventCard 
@@ -136,14 +136,15 @@ const EventsSection = () => {
         />
 
       </div>
-      <div className='buttons flex flex-row space-x-4 my-8 justify-center pt-10'>
-      <Link to="/events" className="bg-[#a2834b] text-white font-cinzel px-8 py-3 rounded-full text-xs hover:bg-[#8b6f3b] transition duration-300 ease-in-out ">
+      <div className='buttons flex flex-col md:flex-row md:space-x-4 space-y-4 md:space-y-0 my-8 justify-center pt-0 m-0'>
+
+      <Link to="/events" className="bg-[#a2834b] text-white font-cinzel px-8 py-3 rounded-full text-xs hover:bg-white hover:text-[#a2834b] transition duration-300 ease-in-out hover: shadow-md hover:shadow-[#dbc7ae] ">
         SEE ALL EVENTS
       </Link>
-      <Link to="/spocs" className="bg-[#a2834b] text-white font-cinzel px-8 py-3 rounded-full text-xs hover:bg-[#8b6f3b] transition duration-300 ease-in-out ">
+      <Link to="/spocs" className="bg-[#a2834b] text-white font-cinzel px-8 py-3 rounded-full text-xs hover:bg-white hover:text-[#a2834b] transition duration-300 ease-in-out hover: shadow-md  hover:shadow-[#dbc7ae] ">
         SPOC&apos;S
       </Link>
-      <Link to="/ambassadors" className="bg-[#a2834b] text-white font-cinzel px-8 py-3 rounded-full text-xs hover:bg-[#8b6f3b] transition duration-300 ease-in-out ">
+      <Link to="/ambassadors" className="bg-[#a2834b] text-white font-cinzel px-8 py-3 rounded-full text-xs hover:bg-white hover:text-[#a2834b] transition duration-300 ease-in-out hover: shadow-md  hover:shadow-[#dbc7ae] ">
         AMBASSADORS
       </Link>
       </div>

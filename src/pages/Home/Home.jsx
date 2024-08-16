@@ -30,8 +30,7 @@ export default function Home() {
           <Intro />
           
         
-          <EventsSection />
-          <Highlights />
+          
           <MediaSidebar />
          
 
