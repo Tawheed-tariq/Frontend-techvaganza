@@ -24,12 +24,7 @@ export default function Home() {
           <Intro />
           <About />
           <EventsSection />
-        
-         {/* <Highlights /> */}
-         
-          
-        {/* <PhotoGallery/> */}
-<Gallery/>
+        <Gallery/>
         </div>
         <Footer />
       </div>
