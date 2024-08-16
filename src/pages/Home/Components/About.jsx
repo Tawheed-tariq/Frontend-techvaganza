@@ -2,20 +2,18 @@ import React from 'react';
 
 function About() {
   return (
-    <div className=' md:min-h-[80vh] xs:min-h-[90vh] sm:min-h-screen flex justify-center items-center'>
-      <div 
-        id='about-box' 
-        className='p-8 mt-24 mb-24 bg-background  sm:p-12 md:p-12 md:pr-10 w-4/5  md:w-3/5 sm:w-4/5'>
-        <div>
-          <p className='text-grayText text-xs sm:text-sm font-lora font-semibold'>
+    <div className='px-4 sm:px-0 flex justify-center items-center'>
+      <div className='p-8 my-28 bg-background sm:p-12 md:w-3/5 sm:w-4/5  ShadowLarge'>
+        <div className='overflow-visible mb-5'>
+          <p className='text-xs sm:text-sm font-sanchez font-semibold'>
             NIT Srinagar's Annual Technical Fest
           </p>
-          <h2 className='text-primary text-3xl   sm:text-4xl md:text-5xl overflow-visible font-semibold font-lora mt-2 mb-6 sm:mb-8 md:mb-12'>
+          <h2 className='text-primary text-4xl sm:text-5xl md:text-6xl overflow-visible font-semibold font-playfair mt-2'>
             Techvaganza
           </h2>
         </div>
-        <div id='about-description'>
-          <p className='text-entryDescription text-base sm:text-base md:text-base font-lora'>
+        <div>
+          <p className='text-base sm:text-base md:text-base font-sanchez'>
             The Annual Cultural Fest at the National Institute of Technology,
             Srinagar, aptly named "Rang-e-Chinar," is a dazzling spectacle of
             talent and creativity that leaves no stone unturned in showcasing
