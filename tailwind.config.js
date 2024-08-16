@@ -7,11 +7,8 @@ export default {
 
   theme: {
     extend: {
-      backgroundImage: {
-
-      },
-
       colors: {
+
          customBrown: '#A2834B',
         gray: {
           light: '#E5E5E5',
@@ -20,22 +17,18 @@ export default {
           
         },
       
+
+        'primary': '#3b5704',
+        'secondary': '#EDE7E7',
+        'highlightColor': '#64ECC966',
+        'eventBorder': '#FFFFFF4D',
+        'background' : '#e7febc'
+
       },
-      
-      borderRadius:{
-      customBrown: '#A2834B'
-      },
-      boxShadow: {
-        'inner-glow': 'inset 0 0 25px rgba(162, 131, 75, 0.8)',
-        'glow': '0 4px 30px rgba(162, 131, 75, 0.8), 0 0 30px rgba(162, 131, 75, 0.8)',// Adjust as needed
-      },
-    
       fontFamily: {
         playfair: ['Playfair Display', 'serif'],
         averia: ['Averia Serif Libre', 'cursive'],
-        cinzel: ['Cinzel', 'serif'],
-        roboto: ['Roboto', 'Helvetica', 'Arial', 'sans-serif'],
-        'roboto-slab': ['Roboto Slab', 'Times New Roman', 'serif'],
+        sanchez : ['Sanchez', 'serif'],
       },
       boxShadow: {
         'card-default': '0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12)',
@@ -47,12 +40,15 @@ export default {
       transitionDuration: {
         '200': '200ms',
         'playfair': ['Playfair Display', 'serif'],
+        'sanchez' : ['Sanchez', 'serif'],
         'averia': ['Averia Serif Libre', 'cursive'],
         'lora': ['roboto', 'serif'],
          'cinzel-deco':['roboto','serif']
 
       },
-     
+      minWidth: {
+        '150': '150px', 
+      },
     },
     screens: {
       xs:"480px",

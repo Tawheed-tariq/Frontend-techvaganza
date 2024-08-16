@@ -15,19 +15,19 @@ const EventCard = ({ title, time, location, backgroundImage, link }) => {
       data-aos-duration="1000"
     >
       <div 
-        className="relative bg-cover bg-center flex flex-col justify-between rounded-lg text-[#A2834B] items-center
-         font-semi-bold max-w-xs m-auto shadow-lg box-border p-[5.5%] h-auto transition-transform transform hover:scale-105 hover:z-10"
+        className="relative bg-cover bg-center flex flex-col justify-between rounded-lg text-secondary items-center
+         font-semi-bold max-w-xs m-auto shadow-lg box-border brightness-75 bg-blend-overlay p-[5.5%] h-auto transition-transform transform hover:scale-105 hover:z-10"
         style={{ backgroundImage: `url(${backgroundImage})` }}
       >
         <div className="w-full text-left flex flex-col">
-          <h1 className="text-[#A2834B] text-4xl font-serif mt-[2%] font-semibold overflow-visible">{title}</h1>
+          <h1 className="text-secondary text-4xl font-serif mt-[2%] font-semibold overflow-visible">{title}</h1>
           <ul className="text-white text-lg font-serif pt-[52%]">
             <li className="flex items-center">
-              <FaDiamond className="w-4 h-4 text-[#A2834B] mr-2" />
+              <FaDiamond className="w-4 h-4 text-secondary mr-2" />
               {time}
             </li>
             <li className="flex items-center">
-              <FaDiamond className="w-4 h-4 text-[#A2834B] mr-2" />
+              <FaDiamond className="w-4 h-4 text-secondary mr-2" />
               {location}
             </li>
           </ul>
@@ -59,7 +59,7 @@ EventCard.propTypes = {
 // EventsSection Component
 const EventsSection = () => {
   return (
-    <div className="container  flex flex-col items-center p-10" id="exciting-events">
+    <div className="container  flex flex-col p-10" id="exciting-events">
       {/* Section Header */}
       <div className="text-left pb-5">
         <p className="text-gray pt-[2%]">Just the best</p>
@@ -67,14 +67,14 @@ const EventsSection = () => {
       </div>
 
       {/* Event Cards Container */}
-      <div className="the-complete-lineup relative flex flex-wrap justify-center h-auto">
+      <div className="the-complete-lineup relative flex flex-wrap justify-center h-auto items-center">
         {/* Example of EventCard usage */}
 
         <EventCard 
           title="BEAT BOX"
           time="DAY 2 - 2:30PM"
           location="Open mic stage"
-          backgroundImage="/card-bg.png"
+          backgroundImage="/card-bg1.jpg"
           link="#"
         />
         
@@ -83,7 +83,7 @@ const EventsSection = () => {
           title="CLAY ART"
           time="DAY 1 - 2:00PM"
           location="Drawing Hall"
-          backgroundImage="/card-bg.png"
+          backgroundImage="/card-bg1.jpg"
           link="#"
         />
 
@@ -91,7 +91,7 @@ const EventsSection = () => {
           title="SOLO DANCE"
           time="DAY 1 - 1:00PM"
           location="Main Stage"
-          backgroundImage="/card-bg.png"
+          backgroundImage="/card-bg1.jpg"
           link="#"
         />
 
@@ -99,7 +99,7 @@ const EventsSection = () => {
           title="PAPER MACHE"
           time="DAY 1 - 1:00PM"
           location="Main Stage"
-          backgroundImage="/card-bg.png"
+          backgroundImage="/card-bg1.jpg"
           link="#"
         />
 
@@ -107,7 +107,7 @@ const EventsSection = () => {
           title="GAMING ZONE"
           time="DAY 1 - 1:00PM"
           location="Main Stage"
-          backgroundImage="/card-bg.png"
+          backgroundImage="/card-bg1.jpg"
           link="#"
         />
 
@@ -115,7 +115,7 @@ const EventsSection = () => {
           title="STANDUP COMEDY"
           time="DAY 1 - 9:30AM"
           location="COMMON HALL"
-          backgroundImage="/card-bg.png"
+          backgroundImage="/card-bg1.jpg"
           link="#"
         />
 
@@ -123,7 +123,7 @@ const EventsSection = () => {
           title="DANCE BATTLE"
           time="DAY 1 - 10:00AM"
           location="OPEN MIC STAGE"
-          backgroundImage="/card-bg.png"
+          backgroundImage="/card-bg1.jpg"
           link="#"
         />
 
@@ -131,22 +131,22 @@ const EventsSection = () => {
           title="30S REEL MAKING"
           time="8:00AM BOTH DAYS"
           location="CAMPUS"
-          backgroundImage="/card-bg.png"
+          backgroundImage="/card-bg1.jpg"
           link="#"
         />
 
       </div>
-      <div className='buttons flex flex-row space-x-4 my-8 justify-center pt-10'>
-      <Link to="/events" className="bg-[#a2834b] text-white font-cinzel px-8 py-3 rounded-full text-xs hover:bg-[#8b6f3b] transition duration-300 ease-in-out ">
+      {/* <div className='buttons flex flex-row space-x-4 my-8 justify-center pt-10'>
+      <Link to="/events" className="bg-secondary text-white font-cinzel px-8 py-3 rounded-full text-xs hover:bg-[#8b6f3b] transition duration-300 ease-in-out ">
         SEE ALL EVENTS
       </Link>
-      <Link to="/spocs" className="bg-[#a2834b] text-white font-cinzel px-8 py-3 rounded-full text-xs hover:bg-[#8b6f3b] transition duration-300 ease-in-out ">
+      <Link to="/spocs" className="bg-secondary text-white font-cinzel px-8 py-3 rounded-full text-xs hover:bg-[#8b6f3b] transition duration-300 ease-in-out ">
         SPOC&apos;S
       </Link>
-      <Link to="/ambassadors" className="bg-[#a2834b] text-white font-cinzel px-8 py-3 rounded-full text-xs hover:bg-[#8b6f3b] transition duration-300 ease-in-out ">
+      <Link to="/ambassadors" className="bg-secondary text-white font-cinzel px-8 py-3 rounded-full text-xs hover:bg-[#8b6f3b] transition duration-300 ease-in-out ">
         AMBASSADORS
       </Link>
-      </div>
+      </div> */}
     </div>
   );
 };
