@@ -10,7 +10,7 @@ function About() {
           <p className='text-grayText text-xs sm:text-sm font-lora font-semibold'>
             NIT Srinagar's Annual Technical Fest
           </p>
-          <h2 className='text-introBtnColor text-3xl   sm:text-4xl md:text-5xl overflow-hidden font-semibold font-lora mt-2 mb-6 sm:mb-8 md:mb-12'>
+          <h2 className='text-primary text-3xl   sm:text-4xl md:text-5xl overflow-visible font-semibold font-lora mt-2 mb-6 sm:mb-8 md:mb-12'>
             Techvaganza
           </h2>
         </div>

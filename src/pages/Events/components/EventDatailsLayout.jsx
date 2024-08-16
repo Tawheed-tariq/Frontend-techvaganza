@@ -4,7 +4,7 @@ import TabView from "./Tabview";
 export default function EventDetailsLayout({data}) {
   return (
     <PageLayout title={data.title} imgUrl={data.imgUrl}>
-      <div className="px-4 md:px-12 py-4 md:py-12 font-playfair bg-white">
+      <div className="px-4 md:px-12 py-4 md:py-12 font-playfair bg-background">
         <div className="mb-4">
           <p className="font-medium text-3xl leading-normal mb-3">
             {data.title}

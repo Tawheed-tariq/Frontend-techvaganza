@@ -18,7 +18,7 @@ const TabView = ({ data }) => {
             Judging Criteria
           </Tab>
         </TabList>
-        <div className="ShadowSmall mx-2 my-2 px-3 py-4 pb-12">
+        <div className="BoxShadow mx-2 my-2 px-3 py-4 pb-12">
           <TabPanel>
             <h1 className="entry-header text-3xl font-semibold mb-4 mt-4 mx-2 leading-normal">Rules/Prizes</h1>
             <div className="space-y-5 mx-4 font-semibold">
@@ -27,7 +27,7 @@ const TabView = ({ data }) => {
               ))}
             </div>
 
-            <hr className="mt-4 border border-gray-200" />
+            <hr className="mt-4 border border-primary" />
             <h1 className="entry-header text-3xl font-semibold mb-4 mt-4 mx-2 leading-normal">Prizes</h1>
             <div className="space-y-5 mx-4 font-semibold">
               {data.prizes.map((prize) => (

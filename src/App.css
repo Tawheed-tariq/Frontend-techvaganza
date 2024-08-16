@@ -15,31 +15,31 @@
     scroll-behavior: smooth;
 }
 
+
 body{
-    /* background: linear-gradient(135deg, #000E21 0%, #235347 100%); */
-    background-color: #edffcc;
+    /* background-color: #e7febc; */
     background: url('background.png');
     overflow-x: hidden;    
 }
 
 .linear-bg{
-    background: linear-gradient(to bottom, #000E21 0%,#000e21a5 50%, #23534700 100%);
+    background: linear-gradient(to bottom, #3b5704ee 0%,#3b57047f 50%, #3b570400 100%);
 }
+
 
 /* Background Images */
 .background-image {
     position: absolute;
     background-size: cover;
     background-position: center;
-    opacity: 0.8; /*Adjust to make content readable */
+    overflow: hidden;
+    opacity: 1; /*Adjust to make content readable */
 }
 
 .bg-1 {
-    top: 40%; /* Adjust position as needed */
-    left: 0%; /* Adjust position as needed */
-    width: 100vw; 
-    height: 40rem; 
-    background-image: url('group5.png');
+    width: 100dvw; 
+    height: 110rem; 
+    background-image: url('/group5.png');
 }
 
 
@@ -48,15 +48,15 @@ body{
     left: 0%; /* Adjust position as needed */
     width: 100vw; 
     height: 30rem; 
-    background-image: url('group4.png');
+    background-image: url('/group4.png');
 }
 
 .bg-3 {
-    top: 120%; /* Adjust position as needed */
+    top: 180%; /* Adjust position as needed */
     right: -8%; /* Adjust position as needed */
     width: 20rem; 
     height: 20rem; 
-    background-image: url('group6.png');
+    background-image: url('/group6.png');
 }
 
 .bg-4 {
@@ -64,23 +64,10 @@ body{
     left: -30%; /* Adjust position as needed */
     width: 50rem; 
     height: 50rem; 
-    background-image: url('group1.png');
+    background-image: url('/group1.png');
 }
 
 
-/* Glassmorphism Layer */
-.glass-layer {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.2); /*Semi-transparent for glass effect*/
-    backdrop-filter: blur(10px); /* Blur effect */
-    -webkit-backdrop-filter: blur(10px); /* Blur effect for Safari */
-    z-index: 1; /* Above backgrounds, below content */
-    overflow-x: hidden;
-}
 
 /* Content Layer */
 .content {
@@ -96,27 +83,21 @@ body{
 }
 
 .ShadowBlur:hover{
-    -webkit-box-shadow: 0px 0px 12px 8px rgba(162,131,75,0.61);
-    -moz-box-shadow: 0px 0px 12px 8px rgba(162,131,75,0.61);
-    box-shadow: 0px 0px 12px 8px rgba(162,131,75,0.61);
-}
-
-.ShadowSmall{
-    -webkit-box-shadow: 0px 0px 12px 2px rgba(162,131,75,0.41);
-    -moz-box-shadow: 0px 0px 12px 2px rgba(162,131,75,0.41);
-    box-shadow: 0px 0px 12px 2px rgba(162,131,75,0.41);
+    -webkit-box-shadow: 0px 0px 12px 8px rgba(59, 87, 4, 0.5);
+    -moz-box-shadow: 0px 0px 12px 8px rgba(59, 87, 4, 0.5);
+    box-shadow: 0px 0px 12px 8px rgba(59, 87, 4, 0.5);
 }
 
 .ImgShadow{
-    -webkit-box-shadow: 0px 0px 28px 0px rgba(110,110,110,0.65);
-    -moz-box-shadow: 0px 0px 28px 0px rgba(110,110,110,0.65);
-    box-shadow: 0px 0px 28px 0px rgba(110,110,110,0.65);
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(59, 87, 4, 0.8);
+    -moz-box-shadow: 0px 0px 12px 0px rgba(59, 87, 4, 0.8);
+    box-shadow: 0px 0px 12px 0px rgba(59, 87, 4, 0.8);
 }
 
 .BoxShadow{
-    -webkit-box-shadow: 0px 0px 12px 0px rgba(110,110,110,0.75);
-    -moz-box-shadow: 0px 0px 12px 0px rgba(110,110,110,0.75);
-    box-shadow: 0px 0px 12px 0px rgba(110,110,110,0.75);
+    -webkit-box-shadow: 0px 0px 6px 0px rgba(59, 87, 4, 0.9);
+    -moz-box-shadow: 0px 0px 6px 0px rgba(59, 87, 4, 0.9);
+    box-shadow: 0px 0px 6px 0px rgba(59, 87, 4, 0.9);
 }
 
 /* active tab  */

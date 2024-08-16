@@ -137,10 +137,7 @@ const ExcitingEvents = () => {
                 </div>
             </div>
         </div>
-<div>
-<EventsSection />
 
-</div>
         </div> //for bg
     );
 };
