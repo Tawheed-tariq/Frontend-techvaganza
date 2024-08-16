@@ -35,36 +35,36 @@ body{
 }
 
 .bg-1 {
-    top: 0%; /* Adjust position as needed */
-    left: 20%; /* Adjust position as needed */
-    width: 80rem; 
-    height: 80rem; 
-    background-image: url('Group 1.png');
+    top: 40%; /* Adjust position as needed */
+    left: 0%; /* Adjust position as needed */
+    width: 100vw; 
+    height: 40rem; 
+    background-image: url('group5.png');
 }
 
 
 .bg-2 {
-    top: 10%; /* Adjust position as needed */
-    left: -40%; /* Adjust position as needed */
-    width: 70rem; 
-    height: 70rem; 
-    background-image: url('Group 6.png');
+    bottom: -120%; /* Adjust position as needed */
+    left: 0%; /* Adjust position as needed */
+    width: 100vw; 
+    height: 30rem; 
+    background-image: url('group4.png');
 }
 
 .bg-3 {
-    top: 100%; /* Adjust position as needed */
-    left: 80%; /* Adjust position as needed */
+    top: 120%; /* Adjust position as needed */
+    right: -8%; /* Adjust position as needed */
     width: 20rem; 
     height: 20rem; 
-    background-image: url('Group 6.png');
+    background-image: url('group6.png');
 }
 
 .bg-4 {
-    top: -60%; /* Adjust position as needed */
-    left: 66%; /* Adjust position as needed */
-    width: 100rem; 
-    height: 100rem; 
-    background-image: url('Group 6.png');
+    top: 120%; /* Adjust position as needed */
+    left: -30%; /* Adjust position as needed */
+    width: 50rem; 
+    height: 50rem; 
+    background-image: url('group1.png');
 }
 
 
@@ -121,7 +121,7 @@ body{
 
 /* active tab  */
 .active-tab {
-    background-color: #a2834b !important;
+    background-color: #3b5704 !important;
     color: white !important;
   }
 
@@ -147,4 +147,61 @@ body{
 .underline-animate:hover::after{
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+
+
+/* event lineup page*/
+
+.custom-glow-button {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #A2834B;
+    color: #A2834B;
+    background-color: white;
+    padding: 0.5rem 1.25rem; /* Adjusted padding for a smaller button height */
+    border-radius: 0.375rem; /* Tailwind rounded-md */
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-glow-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: inherit;
+    box-shadow: 0 0 10px rgba(162, 131, 75, 0.6), inset 0 0 10px rgba(162, 131, 75, 0.6); /* Inner and outer glow */
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.custom-glow-button:hover::before {
+    opacity: 1;
+    transform: scale(1.05);
+}
+/* Example CSS for responsive-image class */
+
+.responsive-image {
+    /* Ensure images scale nicely within their containers */
+    width: 100%;
+    height: auto;
+}
+
+/* Additional styling for smaller screens */
+@media (max-width: 768px) {
+    .responsive-image {
+        /* Adjust image size or other properties for smaller screens */
+        width: 100%;
+        margin: 0 auto; /* Center the image */
+    }
+}
+/* ExcitingEvents.css */
+.exciting-events-container {
+    background-image: url('/1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
