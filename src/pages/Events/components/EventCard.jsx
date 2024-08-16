@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 export default function EventCard({title, time, venue, url, image}) {
   return (
     <>
-      <Link to={url} className="rounded-xl flex flex-col items-center BoxShadow w-[250px] md:w-[310px] px-4 py-4 mb-6">
+      <Link to={url} className="rounded-xl bg-white flex flex-col items-center BoxShadow w-[250px] md:w-[310px] px-4 py-4 mb-6">
           <img
             className="w-[220px] h-[300px] md:w-[280px] md:h-[360px] overflow-hidden z-20 absolute -mt-10 rounded-xl ImgShadow transform hover:scale-105 transition duration-200 ease-in-out"
             src="/events/meme.jpg"

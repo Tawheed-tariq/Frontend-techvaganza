@@ -27,14 +27,14 @@ const Header = () => {
   return (
     <>
       <header
-        className="py-4 px-4 md:px-28 w-full"
+        className="py-4 px-4 md:px-28 w-full font-sanchez"
         style={{
           background:
             "linear-gradient(to bottom, rgba(18, 18, 18, 0.8), 40% , rgba(0, 0, 0, 0))",
         }}
       >
         <div className="flex flex-row justify-between items-center container mx-auto ">
-          <Link to="/" className="text-white font-bold text-xl">
+          <Link to="/">
             <img src="/logo.png" className="h-16" alt="Logo" />
           </Link>
 
@@ -48,20 +48,20 @@ const Header = () => {
           <div className="hidden md:flex items-center md:space-x-14 large:space-x-16">
             <Link
               to="/"
-              className="text-white hover:text-primary underline-animate text-xl relative inline-block"
+              className="text-white hover:text-primary underline-animate text-2xl relative inline-block"
             >
               Home
             </Link>
             <Link
               to="/events"
-              className="text-white hover:text-primary text-xl underline-animate relative inline-block"
+              className="text-white hover:text-primary text-2xl underline-animate relative inline-block"
             >
               Events
             </Link>
 
             <div className="underline-animate text-primary relative inline-block">
               <button
-                className="text-white hover:text-primary flex items-center text-xl"
+                className="text-white hover:text-primary flex items-center text-2xl"
                 onClick={() => toggleDropdown("register")}
               >
                 Register
@@ -79,7 +79,7 @@ const Header = () => {
 
             <div className="underline-animate text-primary relative inline-block">
               <button
-                className="text-white hover:text-primary flex items-center text-xl "
+                className="text-white hover:text-primary flex items-center text-2xl "
                 onClick={() => toggleDropdown("resources")}
               >
                 Resources
@@ -97,7 +97,7 @@ const Header = () => {
 
             <Link
               to="/contact"
-              className="text-white hover:text-primary text-xl underline-animate relative inline-block"
+              className="text-white hover:text-primary text-2xl underline-animate relative inline-block"
             >
               Contact
             </Link>

@@ -7,13 +7,15 @@ export default {
   theme: {
     extend: {
       colors: {
-        'primary': '#64ECC9',
-        'secondary': '#EDE7E7',
+        'primary': '#3b5704',
+        'secondary': '#000000',
         'highlightColor': '#64ECC966',
-        'eventBorder': '#FFFFFF4D'
+        'eventBorder': '#FFFFFF4D',
+        'background': '#edffcc'
       },
       fontFamily: {
         'playfair': ['Playfair Display', 'serif'],
+        'sanchez' : ['Sanchez', 'serif'],
         'averia': ['Averia Serif Libre', 'cursive'],
       },
     },

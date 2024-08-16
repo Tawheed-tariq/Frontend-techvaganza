@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Averia+Serif+Libre:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Sanchez:ital@0;1&display=swap');
 :root {
     --primary-color: #64ECC9;
     --secondary-color: #EDE7E7;
@@ -16,7 +16,9 @@
 }
 
 body{
-    background: linear-gradient(135deg, #000E21 0%, #235347 100%);
+    /* background: linear-gradient(135deg, #000E21 0%, #235347 100%); */
+    background-color: #edffcc;
+    background: url('background.png');
     overflow-x: hidden;    
 }
 

@@ -19,7 +19,7 @@ export default function PageLayout({ title, imgUrl, children }) {
           <div className="w-full h-full flex flex-col">
             <Header />
             <div className="px-10 md:px-[160px] lg:px-[180px] lg2:px-[220px] xl:px-[300px] xl2:px-[340px] flex items-center font-playfair flex-grow">
-              <p className="text-secondary font-extrabold text-5xl leading-normal">
+              <p className="text-white font-extrabold text-5xl leading-normal">
                 {title}
               </p>
             </div>

@@ -14,7 +14,7 @@ export default function Home() {
       <div className="background-image bg-2"></div>
       <div className="background-image bg-3"></div> */}
 
-      <div className="glass-layer"></div>
+      {/* <div className="glass-layer"></div> */}
 
       <div className="content">
         <Header />
