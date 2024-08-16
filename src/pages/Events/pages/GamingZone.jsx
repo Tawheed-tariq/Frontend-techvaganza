@@ -4,7 +4,7 @@ import EventsPageLayout from "../components/EventPageLayout";
 
 export default function GamingZone(){
     return(
-        <PageLayout title={"Gaming Arts"} imgUrl={'/BattleOfBands.png'}>
+        <PageLayout title={"Gaming Arts"} imgUrl={'/events/gaming-cover.jpg'}>
           <EventsPageLayout events={gamingEvents} /> 
         </PageLayout>
     )

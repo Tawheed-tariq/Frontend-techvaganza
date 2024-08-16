@@ -4,7 +4,7 @@ import EventsSection from './Events';
 
 const ExcitingEvents = () => {
     return (
-      <div className="exciting-events-container">
+      <div className="">
 
         <div className="container mx-auto px-4 py-8">
             <div className="text-left mb-20">
@@ -25,7 +25,7 @@ const ExcitingEvents = () => {
                             <img 
                                 src="/public/mr-ms-rang-e-chinar.jpg" 
                                 alt="Mr-mrs rang e chinar" 
-                                className="w-full h-auto object-cover" 
+                                className="w-full h-[460px] object-cover" 
                             />
                         </a>
                     </figure>

@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Averia+Serif+Libre:wght@400;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Sanchez:ital@0;1&display=swap');
 :root {
     --primary-color: #64ECC9;
     --secondary-color: #EDE7E7;
@@ -16,7 +16,9 @@
 }
 
 body{
-    background: linear-gradient(135deg, #000E21 0%, #235347 100%);
+    /* background: linear-gradient(135deg, #000E21 0%, #235347 100%); */
+    background-color: #edffcc;
+    background: url('background.png');
     overflow-x: hidden;    
 }
 
@@ -33,36 +35,36 @@ body{
 }
 
 .bg-1 {
-    top: 0%; /* Adjust position as needed */
-    left: 20%; /* Adjust position as needed */
-    width: 80rem; 
-    height: 80rem; 
-    background-image: url('Group 1.png');
+    top: 40%; /* Adjust position as needed */
+    left: 0%; /* Adjust position as needed */
+    width: 100vw; 
+    height: 40rem; 
+    background-image: url('group5.png');
 }
 
 
 .bg-2 {
-    top: 10%; /* Adjust position as needed */
-    left: -40%; /* Adjust position as needed */
-    width: 70rem; 
-    height: 70rem; 
-    background-image: url('Group 6.png');
+    bottom: -120%; /* Adjust position as needed */
+    left: 0%; /* Adjust position as needed */
+    width: 100vw; 
+    height: 30rem; 
+    background-image: url('group4.png');
 }
 
 .bg-3 {
-    top: 100%; /* Adjust position as needed */
-    left: 80%; /* Adjust position as needed */
+    top: 120%; /* Adjust position as needed */
+    right: -8%; /* Adjust position as needed */
     width: 20rem; 
     height: 20rem; 
-    background-image: url('Group 6.png');
+    background-image: url('group6.png');
 }
 
 .bg-4 {
-    top: -60%; /* Adjust position as needed */
-    left: 66%; /* Adjust position as needed */
-    width: 100rem; 
-    height: 100rem; 
-    background-image: url('Group 6.png');
+    top: 120%; /* Adjust position as needed */
+    left: -30%; /* Adjust position as needed */
+    width: 50rem; 
+    height: 50rem; 
+    background-image: url('group1.png');
 }
 
 
@@ -119,7 +121,7 @@ body{
 
 /* active tab  */
 .active-tab {
-    background-color: #a2834b !important;
+    background-color: #3b5704 !important;
     color: white !important;
   }
 

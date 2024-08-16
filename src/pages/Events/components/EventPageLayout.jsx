@@ -8,7 +8,7 @@ const EventsPageLayout = ({events}) => {
             Event List
           </p>
         </div>
-        <div className="px-10 flex flex-wrap justify-center gap-8 pt-20 pb-10 relative bg-white">
+        <div className="px-10 flex flex-wrap justify-center gap-8 pt-20 pb-10 relative bg-[#edffcc]">
           {events.map((item, index) => (
               <EventCard
                 key={index}
