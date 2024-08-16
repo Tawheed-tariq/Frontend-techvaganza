@@ -25,7 +25,13 @@ export default {
       
       borderRadius:{
       '30':'30px',
+        'customBrown': '#A2834B'
       },
+      boxShadow: {
+        'inner-glow': 'inset 0 0 25px rgba(162, 131, 75, 0.8)',
+        'glow': '0 4px 30px rgba(162, 131, 75, 0.8), 0 0 30px rgba(162, 131, 75, 0.8)',// Adjust as needed
+      },
+    
       fontFamily: {
         'playfair': ['Playfair Display', 'serif'],
         'averia': ['Averia Serif Libre', 'cursive'],
