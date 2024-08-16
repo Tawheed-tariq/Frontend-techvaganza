@@ -4,8 +4,7 @@ import Footer from "../../Components/Footer";
 import EventsSection from "./Components/Events";
 import Intro from "./Components/Intro";
 import About from "./Components/About";
-
-
+import Gallery from "./Components/Gallery";
 import Highlights from "./Components/EventsLineup";
 
 
@@ -28,8 +27,8 @@ export default function Home() {
         <div className="py-10">
           <Intro />
           
-        
-
+        {/* <PhotoGallery/> */}
+<Gallery/>
         </div>
         <Footer />
       </div>

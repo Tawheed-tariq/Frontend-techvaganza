@@ -12,11 +12,12 @@ export default {
       },
 
       colors: {
-     
+         customBrown: '#A2834B',
         gray: {
           light: '#E5E5E5',
           DEFAULT: '#3C4857',
           dark: '#888',
+          
         },
       
       },
