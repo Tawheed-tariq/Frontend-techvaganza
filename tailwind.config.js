@@ -7,8 +7,8 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'hero-background': "url('/public/hero.png')",
-        'about-background':"url('/public/1.png')",
+        'hero-background': "url('/hero.png')",
+        'about-background':"url('/1.png')",
       },
 
       colors: {
