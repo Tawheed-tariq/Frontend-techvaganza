@@ -5,7 +5,7 @@ import EventsPageLayout from "../components/EventPageLayout";
 
 export default function VisualArts() {
   return (
-    <PageLayout title={"Visual Arts"} imgUrl={"/BattleOfBands.png"}>
+    <PageLayout title={"Visual Arts"} imgUrl={"/events/visual-cover.jpg"}>
       <EventsPageLayout events={VisualEvents} />      
     </PageLayout>
   );

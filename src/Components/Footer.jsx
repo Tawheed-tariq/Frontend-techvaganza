@@ -2,7 +2,7 @@ import { FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-[url('/common/footer-cover.jpg')] brightness-75 bg-cover bg-top h-96 relative text-white flex flex-col justify-center items-center font-playfair">
+    <footer className="bg-[url('/common/footer-cover.png')] bg-blend-overlay bg-cover bg-top h-96 relative text-white flex flex-col justify-center items-center font-playfair">
       {/* Overlay for reducing brightness of background image */}
       <div className="absolute inset-0 bg-black opacity-40 z-0"></div>
       <div className="top-0 relative h-auto overflow-hidden w-100%">
@@ -22,7 +22,7 @@ const Footer = () => {
           <div className="mb-4">
             <a
               href="mailto:techvaganza@nitsri.ac.in"
-              className="text-md md:text-xl hover:text-primary underline-animate relative inline-block font-averia"
+              className="text-md md:text-xl hover:text-secondary underline-animate relative inline-block font-averia"
             >
               techvaganza@nitsri.ac.in
             </a>
@@ -36,7 +36,7 @@ const Footer = () => {
             >
               <FaInstagram
                 size={24}
-                className="text-primary hover:text-white transition duration-300"
+                className="text-secondary hover:text-white transition duration-300"
               />
             </a>
             <a
@@ -46,7 +46,7 @@ const Footer = () => {
             >
               <FaYoutube
                 size={24}
-                className="text-primary hover:text-white transition duration-300"
+                className="text-secondary hover:text-white transition duration-300"
               />
             </a>
             <a
@@ -56,7 +56,7 @@ const Footer = () => {
             >
               <FaLinkedin
                 size={24}
-                className="text-primary hover:text-white transition duration-300"
+                className="text-secondary hover:text-white transition duration-300"
               />
             </a>
           </div>
