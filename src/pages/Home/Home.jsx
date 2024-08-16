@@ -4,7 +4,7 @@ import Footer from "../../Components/Footer";
 import EventsSection from "./Components/Events";
 import Intro from "./Components/Intro";
 import About from "./Components/About";
-
+import MediaSidebar from "./Components/stickyScroll";
 
 import Highlights from "./Components/EventsLineup";
 
@@ -26,9 +26,13 @@ export default function Home() {
       <div className="content">
 
         <div className="py-10">
+         
           <Intro />
           
         
+          
+          <MediaSidebar />
+         
 
         </div>
         <Footer />
