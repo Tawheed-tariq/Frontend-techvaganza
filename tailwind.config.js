@@ -12,7 +12,7 @@ export default {
         'secondary': '#EDE7E7',
         'highlightColor': '#64ECC966',
         'eventBorder': '#FFFFFF4D',
-        'background' : '#edffcc'
+        'background' : '#e7febc'
       },
       fontFamily: {
         playfair: ['Playfair Display', 'serif'],

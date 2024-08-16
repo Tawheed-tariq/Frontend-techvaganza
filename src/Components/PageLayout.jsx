@@ -5,19 +5,14 @@ export default function PageLayout({ title, imgUrl, children }) {
   return (
     <>
       <div className="background-image bg-1"></div>
-      {/* <div className="background-image bg-2"></div> */}
       <div className="background-image bg-3"></div>
-      {/* <div className="background-image bg-4"></div> */}
 
-       {/* <div className="background-image bg-1"></div>
-      <div className="background-image bg-2"></div>
-      <div className="background-image bg-3"></div>
-      <div className="background-image bg-4"></div> 
-       <div className="glass-layer"></div> */}
 
       <div className="content">
         <div
-          style={{ backgroundImage: `url(${imgUrl})` }}
+          style={{
+            backgroundImage: `linear-gradient(to bottom, #000000 0%, #0000009f 50%, #00000033 100%), url(${imgUrl})`,
+          }}
           className={`bg-cover bg-top h-[500px]`}
         >
           <div className="w-full h-full flex flex-col">

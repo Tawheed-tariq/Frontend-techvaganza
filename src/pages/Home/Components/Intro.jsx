@@ -39,36 +39,43 @@ function Intro() {
   });
 
   return (
-    <div className='bg-hero-background bg-cover bg-center bg-blend-overlay backdrop-filter backdrop-brightness-100'>
+    <div 
+      className="bg-cover bg-center bg-blend-overlay min-h-screen"
+      style={{
+        backgroundImage: 'linear-gradient(to bottom, #000000 0%, #0000009f 50%, #00000033 100%), url(/common/hero-cover.png)',
+      }}
+    >
       <div>
         <Header />
       </div>
-      <div id='introText' className='min-h-screen pt-32 p-7 md:p-32'>
-        <div id='dateText' className='date-text text-white text-2xl md:text-4xl text-center overflow-hidden xs:whitespace-nowrap'>
+      <div className='pt-32 p-7 md:p-32'>
+        <div className='date-text text-white text-2xl md:text-4xl text-center overflow-hidden xs:whitespace-nowrap'>
           20 
-          <sup className='font-lora text-white text-xl md:text-2xl'>th </sup>  
+          <sup className='text-white text-xl md:text-2xl'>th </sup>  
           &  21
-          <sup className='font-lora text-white text-xl md:text-2xl'>st </sup> 
+          <sup className='text-white text-xl md:text-2xl'>st </sup> 
           Sep 2024
         </div>
-        <p className='text-center text-5xl md:text-9xl mt-4 text-white font-playfair font-extrabold leading-normal' >Techvaganza</p>
-        <div id='timerContainer' className='timer-container mt-6 md:mt-10 flex justify-center'>
-          <div className='w-full min-w-150 mb-7 px-4 md:px-4 lg:px-40 flex flex-wrap justify-between text-white font-bold overflow-hidden'>
-            <div id='daysTimer' className='timer-item text-center'>
-              <div className='block text-4xl md:text-9xl font-semibold leading-none overflow-hidden '>{timeLeft.days}</div>
-              <div className='timer-label block text-md md:text-3xl font-light overflow-hidden'>DAYS</div>
+        <p className='text-center text-5xl md:text-9xl mt-4 text-white font-playfair font-extrabold overflow-visible' >Techvaganza</p>
+
+        
+        <div className='timer-container mt-6 md:mt-10 flex justify-center'>
+          <div className='w-full min-w-150 mt-7 px-12 lg:px-40 flex flex-wrap gap-6 justify-between text-white font-bold overflow-hidden'>
+            <div className='timer-item text-center'>
+              <div className='block text-6xl md:text-9xl font-semibold overflow-visible '>{timeLeft.days}</div>
+              <div className='timer-label block text-lg md:text-3xl overflow-visible'>DAYS</div>
             </div>
-            <div id='hoursTimer' className='timer-item text-center'>
-              <div className='block text-4xl md:text-9xl font-semibold leading-none overflow-hidden'>{timeLeft.hours}</div>
-              <div className='timer-label block text-md md:text-3xl font-light overflow-hidden'>HOURS</div>
+            <div className='timer-item text-center'>
+              <div className='block text-6xl md:text-9xl font-semibold overflow-visible'>{timeLeft.hours}</div>
+              <div className='timer-label block text-lg md:text-3xl overflow-visible'>HOURS</div>
             </div>
-            <div id='minutesTimer' className='timer-item text-center'>
-              <div className='block text-4xl md:text-9xl font-semibold leading-none overflow-hidden'>{timeLeft.minutes}</div>
-              <div className='timer-label block text-md md:text-3xl font-light overflow-hidden'>MINUTES</div>
+            <div className='timer-item text-center'>
+              <div className='block text-6xl md:text-9xl font-semibold overflow-visible'>{timeLeft.minutes}</div>
+              <div className='timer-label block text-lg md:text-3xl overflow-visible'>MINUTES</div>
             </div>
-            <div id='secondsTimer' className='timer-item text-center'>
-              <div className='block text-4xl md:text-9xl font-semibold leading-none overflow-hidden'>{timeLeft.seconds}</div>
-              <div className='timer-label block text-md md:text-3xl font-light overflow-hidden'>SECONDS</div>
+            <div className='timer-item text-center'>
+              <div className='block text-6xl md:text-9xl font-semibold overflow-visible'>{timeLeft.seconds}</div>
+              <div className='timer-label block text-lg md:text-3xl overflow-visible'>SECONDS</div>
             </div>
           </div>
         </div>

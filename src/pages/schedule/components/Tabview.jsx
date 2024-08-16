@@ -25,7 +25,7 @@ const Tabview = ({ tab1, tab2 }) => {
           {tab2}
         </Tab>
       </TabList> 
-      <div className="ShadowSmall mx-2 my-2 px-3 py-4 pb-12">
+      <div className="BoxShadow mx-2 my-2 px-3 py-4 pb-12">
         <TabPanel>
           {day1Events.map((item, index) => (
             <ScheduleItem

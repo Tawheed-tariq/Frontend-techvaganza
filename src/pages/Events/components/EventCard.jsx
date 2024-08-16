@@ -10,11 +10,11 @@ export default function EventCard({title, time, venue, url, image}) {
             alt=""
           />
         <div className="mt-[280px] md:mt-[340px] w-full font-playfair">
-          <p className="font-semibold text-2xl">
+          <p className="font-semibold text-2xl text-primary">
             {title}
           </p>
-          <p className="text-sm md:text-base text-opacity-80 font-semibold">{time}</p>
-          <p className="text-base text-opacity-80 mt-3">{venue}</p>
+          <p className="text-sm md:text-base text-gray-900 font-semibold">{time}</p>
+          <p className="text-base text-gray-600 mt-3">{venue}</p>
         </div>
       </Link>
     </>
