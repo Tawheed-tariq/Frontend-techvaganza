@@ -60,11 +60,11 @@ body{
 }
 
 .bg-4 {
-    top: 120%; /* Adjust position as needed */
-    left: -30%; /* Adjust position as needed */
-    width: 50rem; 
-    height: 50rem; 
-    background-image: url('/group1.png');
+    top: 180%; /* Adjust position as needed */
+    left: -4%; /* Adjust position as needed */
+    width: 90rem; 
+    height: 36rem; 
+    background-image: url('/group3.png');
 }
 
 

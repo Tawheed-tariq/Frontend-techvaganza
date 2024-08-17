@@ -20,7 +20,7 @@ const TabView = ({ data }) => {
         </TabList>
         <div className="BoxShadow mx-2 my-2 px-3 py-4 pb-12">
           <TabPanel>
-            <h1 className="entry-header text-3xl font-semibold mb-4 mt-4 mx-2 leading-normal">Rules/Prizes</h1>
+            <h1 className="entry-header text-3xl text-primary font-semibold mb-4 mt-4 mx-2 leading-normal">Rules/Prizes</h1>
             <div className="space-y-5 mx-4 font-semibold">
               {data.rules.map((rule) => (
                 <p>{rule}</p>
@@ -28,7 +28,7 @@ const TabView = ({ data }) => {
             </div>
 
             <hr className="mt-4 border border-primary" />
-            <h1 className="entry-header text-3xl font-semibold mb-4 mt-4 mx-2 leading-normal">Prizes</h1>
+            <h1 className="entry-header text-3xl text-primary font-semibold mb-4 mt-4 mx-2 leading-normal">Prizes</h1>
             <div className="space-y-5 mx-4 font-semibold">
               {data.prizes.map((prize) => (
                 <p>{prize}</p>
@@ -37,7 +37,7 @@ const TabView = ({ data }) => {
           </TabPanel>
 
           <TabPanel>
-            <h2 className="entry-header text-3xl font-semibold mb-4 mt-4 mx-2 leading-normal">
+            <h2 className="entry-header text-3xl text-primary font-semibold mb-4 mt-4 mx-2 leading-normal">
               Judging Criteria
             </h2>
             <div className="space-y-5 mx-4 font-semibold">

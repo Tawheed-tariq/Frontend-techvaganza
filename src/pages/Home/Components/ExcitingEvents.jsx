@@ -1,7 +1,7 @@
 import {cards} from "../../../constants/home-events";
 import Card from "./Card";
-
 const ExcitingEvents = () => {
+
   return (
     <div className="px-4 md:px-[140px] lg:px-[160px] lg2:px-[200px] xl:px-[280px] xl2:px-[320px]">
         <div className="text-left mb-20">

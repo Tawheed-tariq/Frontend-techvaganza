@@ -1,9 +1,21 @@
-import React from 'react';
+import Aos from "aos";
+import "aos/dist/aos.css"
+import { useEffect } from "react";
 
 function About() {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      anchorPlacement: "top-center",
+      disable: "Phone",
+      startEvent: "DOMContentLoaded",
+      easing: "ease-out",
+      mirror: true,
+    });
+  }, []);
   return (
     <div className='px-4 sm:px-0 flex justify-center items-center'>
-      <div className='p-8 my-28 bg-background sm:p-12 md:w-3/5 sm:w-4/5  ShadowLarge'>
+      <div data-aos="fade-down" className='p-8 my-40 bg-background sm:p-12 md:w-3/5 sm:w-4/5  ShadowLarge'>
         <div className='overflow-visible mb-5'>
           <p className='text-xs sm:text-sm font-sanchez font-semibold'>
             NIT Srinagar's Annual Technical Fest

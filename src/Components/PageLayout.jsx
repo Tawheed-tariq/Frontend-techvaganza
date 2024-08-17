@@ -6,7 +6,8 @@ export default function PageLayout({ title, imgUrl, children }) {
   return (
     <>
       <div className="background-image bg-1"></div>
-      <div className="background-image bg-3"></div>
+      <div className="background-image hidden md:block bg-3"></div>
+      <div className="background-image hidden md:block bg-4"></div>
 
 
       <div className="content">

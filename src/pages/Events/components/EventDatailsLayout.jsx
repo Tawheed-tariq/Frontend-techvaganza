@@ -6,13 +6,13 @@ export default function EventDetailsLayout({data}) {
     <PageLayout title={data.title} imgUrl={data.imgUrl}>
       <div className="px-4 md:px-12 py-4 md:py-12 font-playfair bg-background">
         <div className="mb-4">
-          <p className="font-medium text-3xl leading-normal mb-3">
+          <p className="font-semibold text-3xl text-primary leading-normal mb-3">
             {data.title}
           </p>
           <p className="text-base">{data.desc}</p>
         </div>
         <div className="mb-4">
-          <p className="font-medium text-3xl leading-normal mb-4">Entry Fee</p>
+          <p className="font-semibold text-primary text-3xl leading-normal mb-4">Entry Fee</p>
           <p className="text-base mb-2">
             {Object.keys(data.entryFee).map((key) => (
               <div className="mb-3">
