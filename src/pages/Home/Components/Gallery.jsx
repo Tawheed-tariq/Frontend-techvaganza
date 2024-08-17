@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 
 const images = [
   { src: '/slider-1.jpeg', alt: 'Slider 1', title: 'TECHVAGANZA', description: 'Image 1 Description' },
@@ -8,14 +8,32 @@ const images = [
 
 const Gallery = () => {
   const galleryRef = useRef(null);
-  const [imageList, setImageList] = useState([...images, ...images, ...images]); // Create a large list of images  to create infinite scrll
+  const [imageList, setImageList] = useState([...images, ...images, ...images]); // Create a large list of images to create infinite scroll
+  const [slidesToScroll, setSlidesToScroll] = useState(3);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 640) {
+        setSlidesToScroll(1); // Mobiles
+      } else if (window.innerWidth < 768) {
+        setSlidesToScroll(2); // Tablets
+      } else if (window.innerWidth < 1024) {
+        setSlidesToScroll(3); // Large Tablets
+      } else {
+        setSlidesToScroll(4); // Laptops and above
+      }
+    };
+
+    handleResize(); // Initial setup
+    window.addEventListener('resize', handleResize); // Add event listener for resize
+    return () => window.removeEventListener('resize', handleResize); // Cleanup on unmount
+  }, []);
 
   const handleRightArrowClick = () => {
     if (galleryRef.current) {
       const { clientWidth } = galleryRef.current;
-      galleryRef.current.scrollLeft += clientWidth / 3;
-
-      // Append new images to the end of the list to create infinite scrll
+      galleryRef.current.scrollLeft += (clientWidth / slidesToScroll) + 7; 
+      // Append new images to the end of the list to create infinite scroll
       setImageList(prevList => [...prevList, ...images]);
     }
   };
@@ -23,10 +41,9 @@ const Gallery = () => {
   return (
     <div className="relative mt-10">
       <div className='px-8'>
-      <p className="text-lg font-semibold text-gray-600">NIT SRINAGAR</p>
-      <h2 className="text-4xl font-bold uppercase overflow-hidden">Photo Gallery</h2>
+        <p className="text-lg font-semibold text-gray-600">NIT SRINAGAR</p>
+        <h2 className="text-4xl font-bold uppercase overflow-hidden">Photo Gallery</h2>
       </div>
-
       <div
         className="overflow-hidden py-8 relative whitespace-nowrap"
         ref={galleryRef}
@@ -48,7 +65,6 @@ const Gallery = () => {
           </div>
         ))}
       </div>
-
       <button
         onClick={handleRightArrowClick}
         className="absolute bottom-1 left-1/2 transform -translate-x-1/2 bg-customBrown text-white p-6 rounded-full shadow-md hover:shadow-lg"

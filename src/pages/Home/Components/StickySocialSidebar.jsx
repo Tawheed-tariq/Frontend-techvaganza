@@ -3,7 +3,7 @@ import { IoLogoInstagram } from "react-icons/io";
 
 const StickySocialSidebar = () => {
   return (
-    <div className="fixed top-1/2 right-0 ">
+    <div className="fixed top-1/2 right-0 z-50">
       <ul className="flex flex-col space-y-2 bg-primary">
         
         {/* Instagram Link */}

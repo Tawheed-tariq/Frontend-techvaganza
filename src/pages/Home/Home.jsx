@@ -6,7 +6,7 @@ import About from "./Components/About";
 import StickySocialSidebar from "./Components/StickySocialSidebar";
 
 import Gallery from "./Components/Gallery";
-import Highlights from "./Components/EventsLineup";
+import ExcitingEvents from "./Components/ExcitingEvents";
 
 
 export default function Home() {
@@ -20,7 +20,7 @@ export default function Home() {
           <Hero />
           <About />
           <EventsSection />
-          <Highlights />
+          <ExcitingEvents />
           <Gallery/>
           <StickySocialSidebar />
           <Footer />
