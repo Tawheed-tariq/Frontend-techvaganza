@@ -1,6 +1,7 @@
 import "../App.css";
 import Header from "./Header";
 import Footer from "./Footer";
+import StickySocialSidebar from "../pages/Home/Components/StickySocialSidebar";
 export default function PageLayout({ title, imgUrl, children }) {
   return (
     <>
@@ -27,6 +28,7 @@ export default function PageLayout({ title, imgUrl, children }) {
         <div className="w-full mx-auto px-4 md:px-[160px] lg:px-[180px] lg2:px-[220px] xl:px-[300px] xl2:px-[340px] py-20 md:py-28 lg:py-32">
           {children}
         </div>
+        <StickySocialSidebar />
         <Footer />
       </div>
     </>

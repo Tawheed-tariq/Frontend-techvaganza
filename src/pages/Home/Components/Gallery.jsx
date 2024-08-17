@@ -21,23 +21,25 @@ const Gallery = () => {
   };
 
   return (
-    <div className="relative mt-10 ml-7">
+    <div className="relative mt-10">
+      <div className='px-8'>
       <p className="text-lg font-semibold text-gray-600">NIT SRINAGAR</p>
       <h2 className="text-4xl font-bold uppercase overflow-hidden">Photo Gallery</h2>
+      </div>
 
       <div
-        className="overflow-hidden py-16 relative whitespace-nowrap"
+        className="overflow-hidden py-8 relative whitespace-nowrap"
         ref={galleryRef}
       >
         {imageList.map((image, index) => (
           <div
             key={index}
-            className="inline-block w-72 mx-4 relative group"
+            className="inline-block w-96 mx-2 relative group"
           >
             <img
               src={image.src}
               alt={image.alt}
-              className="h-72 w-full object-cover"
+              className="h-96 w-full object-cover"
             />
             <div className="absolute top-0 left-0 w-full h-full p-4 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center">
               <h2 className="text-2xl font-bold text-white mb-4">{image.title}</h2>
@@ -49,7 +51,7 @@ const Gallery = () => {
 
       <button
         onClick={handleRightArrowClick}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 bg-customBrown text-white p-6 rounded-full shadow-md hover:shadow-lg"
+        className="absolute bottom-1 left-1/2 transform -translate-x-1/2 bg-customBrown text-white p-6 rounded-full shadow-md hover:shadow-lg"
       >
         <svg
           className="w-8 h-8"

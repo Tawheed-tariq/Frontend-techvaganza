@@ -3,7 +3,7 @@ import Footer from "../../Components/Footer";
 import EventsSection from "./Components/Events";
 import Hero from "./Components/Hero";
 import About from "./Components/About";
-import MediaSidebar from "./Components/stickyScroll";
+import StickySocialSidebar from "./Components/StickySocialSidebar";
 
 import Gallery from "./Components/Gallery";
 import Highlights from "./Components/EventsLineup";
@@ -22,6 +22,7 @@ export default function Home() {
           <EventsSection />
           <Highlights />
           <Gallery/>
+          <StickySocialSidebar />
           <Footer />
       </div>
     </>
