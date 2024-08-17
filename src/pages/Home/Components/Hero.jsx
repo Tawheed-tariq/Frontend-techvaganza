@@ -61,19 +61,19 @@ function Hero() {
         
         <div className='timer-container mt-6 md:mt-10 flex justify-center'>
           <div className='w-full min-w-150 mt-7 px-12 lg:px-40 flex flex-wrap gap-6 justify-between text-white font-bold overflow-hidden'>
-            <div className='text-center'>
-              <div className='block text-6xl md:text-9xl font-semibold overflow-visible '>{timeLeft.days}</div>
+            <div className='text-center overflow-visible'>
+              <div className='block text-6xl md:text-9xl font-semibold overflow-visible'>{timeLeft.days}</div>
               <div className='timer-label block text-lg md:text-3xl overflow-visible'>DAYS</div>
             </div>
-            <div className='text-center'>
+            <div className='text-center overflow-visible'>
               <div className='block text-6xl md:text-9xl font-semibold overflow-visible'>{timeLeft.hours}</div>
               <div className='timer-label block text-lg md:text-3xl overflow-visible'>HOURS</div>
             </div>
-            <div className='text-center'>
+            <div className='text-center overflow-visible'>
               <div className='block text-6xl md:text-9xl font-semibold overflow-visible'>{timeLeft.minutes}</div>
               <div className='timer-label block text-lg md:text-3xl overflow-visible'>MINUTES</div>
             </div>
-            <div className='text-center'>
+            <div className='text-center overflow-visible'>
               <div className='block text-6xl md:text-9xl font-semibold overflow-visible'>{timeLeft.seconds}</div>
               <div className='timer-label block text-lg md:text-3xl overflow-visible'>SECONDS</div>
             </div>
@@ -93,4 +93,5 @@ function Hero() {
 }
 
 export default Hero;
+
 

@@ -186,10 +186,3 @@ body{
         margin: 0 auto; /* Center the image */
     }
 }
-/* ExcitingEvents.css */
-.exciting-events-container {
-    background-image: url('/1.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}

@@ -9,6 +9,7 @@ import { Link } from 'react-router-dom';
 const EventCard = ({ title, time, location, backgroundImage, link }) => {
   return (
     <div 
+
       className="w-64 text-center md:w-1/2 lg:w-1/3 sm:text-center p-4" 
       data-aos="fade-down" 
       data-aos-duration="1000"
@@ -58,7 +59,7 @@ EventCard.propTypes = {
 // EventsSection Component
 const EventsSection = () => {
   return (
-    <div className="container flex flex-col items-center p-10" id="exciting-events">
+    <div className="container  flex flex-col p-10" id="exciting-events">
       {/* Section Header */}
       <div className="text-left pb-5">
         <p className="text-gray pt-[2%]">Just the best</p>
@@ -66,7 +67,7 @@ const EventsSection = () => {
       </div>
 
       {/* Event Cards Container */}
-      <div className="the-complete-lineup relative flex flex-wrap justify-center h-auto">
+      <div className="the-complete-lineup relative flex flex-wrap justify-center h-auto items-center">
         {/* Example of EventCard usage */}
 
         <EventCard 

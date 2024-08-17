@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-
+import EventsSection from './Events';
 
 const ExcitingEvents = () => {
     return (
@@ -137,6 +137,7 @@ const ExcitingEvents = () => {
                 </div>
             </div>
         </div>
+
         </div> //for bg
     );
 };
