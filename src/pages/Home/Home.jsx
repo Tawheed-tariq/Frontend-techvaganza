@@ -19,8 +19,8 @@ export default function Home() {
       <div className="content">
           <Hero />
           <About />
-          <EventsSection />
           <ExcitingEvents />
+          <EventsSection />
           <Gallery/>
           <StickySocialSidebar />
           <Footer />

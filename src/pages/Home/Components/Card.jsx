@@ -7,29 +7,23 @@ const Card = ({ event, index }) => {
         index % 2 == 0 ? "sm:flex-row" : "sm:flex-row-reverse"
       } items-center sm:space-x-6`}
     >
-      <figure
-        className="flex-shrink-0 w-full sm:w-1/2 md:w-1/3 h-auto"
-      >
-        <a href="#">
-          <img
-            src={event.image}
-            alt="Mr-mrs rang e chinar"
-            className="w-full h-[460px] object-cover"
-          />
-        </a>
-      </figure>
+      <img
+        src={event.image}
+        alt="Mr-mrs rang e chinar"
+        className="w-full sm:max-w-sm h-[460px] object-cover"
+      />
 
       <div
-        className="w-full sm:w-1/2 md:w-2/3 lg:w-1/2 relative sm:-translate-x-12"
+        className={`w-full md:max-w-2xl relative ShadowLarge ${index%2 == 0? 'sm:-translate-x-20': 'sm:translate-x-20'}`}
       >
         <div className="p-6 md:p-8 lg:p-10 bg-background shadow-lg h-full">
-          <div className="text-xl sm:text-2xl font-semibold mb-4 text-customBrown">
+          <div className="text-2xl sm:text-3xl font-semibold mb-4 text-primary overflow-visible">
             {event.title}
           </div>
-          <p className="mb-4 sm:mb-6">{event.description}</p>
+          <p className="mb-6 md:mb-8">{event.description}</p>
           <Link
             to={event.link}
-            className=""
+            className="px-3 md:px-6 py-3 ShadowBlur text-sm md:text-base rounded-md font-medium text-white bg-primary border border-primary text-center"
           >
             EXPLORE
           </Link>

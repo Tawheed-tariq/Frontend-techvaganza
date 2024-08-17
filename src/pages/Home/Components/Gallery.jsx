@@ -1,9 +1,10 @@
 import React, { useRef, useState, useEffect } from 'react';
 
 const images = [
-  { src: '/slider-1.jpeg', alt: 'Slider 1', title: 'TECHVAGANZA', description: 'Image 1 Description' },
-  { src: '/slider-2.jpeg', alt: 'Slider 2', title: 'TECHVAGANZA', description: 'Image 2 Description' },
-  { src: '/slider-3.jpeg', alt: 'Slider 3', title: 'TECHVAGANZA', description: 'Image 3 Description' },
+  { src: '/slider-1.jpg', alt: 'Slider 1', title: 'TECHVAGANZA', description: 'Image 1 Description' },
+  { src: '/slider-2.jpg', alt: 'Slider 2', title: 'TECHVAGANZA', description: 'Image 2 Description' },
+  { src: '/slider-3.jpg', alt: 'Slider 3', title: 'TECHVAGANZA', description: 'Image 3 Description' },
+  { src: '/slider-4.jpg', alt: 'Slider 3', title: 'TECHVAGANZA', description: 'Image 3 Description' },
 ];
 
 const Gallery = () => {
@@ -39,7 +40,7 @@ const Gallery = () => {
   };
 
   return (
-    <div className="relative mt-10">
+    <div className="relative py-10">
       <div className='px-8'>
         <p className="text-lg font-semibold text-gray-600">NIT SRINAGAR</p>
         <h2 className="text-4xl font-bold uppercase overflow-hidden">Photo Gallery</h2>
@@ -51,7 +52,7 @@ const Gallery = () => {
         {imageList.map((image, index) => (
           <div
             key={index}
-            className="inline-block w-96 mx-2 relative group"
+            className="inline-block w-96 sm:w-[480px] mx-2 relative group"
           >
             <img
               src={image.src}
@@ -67,7 +68,7 @@ const Gallery = () => {
       </div>
       <button
         onClick={handleRightArrowClick}
-        className="absolute bottom-1 left-1/2 transform -translate-x-1/2 bg-customBrown text-white p-6 rounded-full shadow-md hover:shadow-lg"
+        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 bg-primary text-white p-6 rounded-full shadow-md hover:shadow-lg"
       >
         <svg
           className="w-8 h-8"
