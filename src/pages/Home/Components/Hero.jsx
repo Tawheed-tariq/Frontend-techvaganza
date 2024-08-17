@@ -48,7 +48,7 @@ function Hero() {
       <div>
         <Header />
       </div>
-      <div className='pt-32 p-7 md:p-32'>
+      <div className='pt-16 md:pt-32 p-7 md:p-32'>
         <div className='date-text text-white text-2xl md:text-4xl text-center overflow-hidden xs:whitespace-nowrap'>
           20 
           <sup className='text-white text-xl md:text-2xl'>th </sup>  
@@ -79,14 +79,14 @@ function Hero() {
             </div>
           </div>
         </div>
-        {/* <div id='buttonContainer' className='button-container text-center flex flex-col justify-center md:flex-row gap-4 md:gap-7 min-w-24 mt-20 md:mt-32'>
-          <Link>
-            <button id='instituteRegistrationButton' className='button bg-introBtnColor rounded-30 text-black font-semibold py-4 px-10 md:py-4 md:px-10 mb-4 font-lora'>Institute Registration</button> 
+        <div className='flex flex-col items-center justify-center md:flex-row gap-8 md:gap-7 py-10 md:mt-8'>
+          <Link className='rounded-full bg-primary text-secondary font-semibold py-4 px-10 font-sanchez custom-glow'>
+            Institute Registration
           </Link>
-          <Link>
-            <button id='attendeeRegistrationButton' className='button bg-introBtnColor rounded-30 text-black font-semibold py-4 px-10 mb-4 font-lora'>Attendee Registration</button> 
+          <Link className='rounded-full bg-primary text-secondary font-semibold py-4 px-10 font-sanchez custom-glow'>
+            Attendee Registration
           </Link>
-        </div> */}
+        </div>
       </div>
     </div>
   );
