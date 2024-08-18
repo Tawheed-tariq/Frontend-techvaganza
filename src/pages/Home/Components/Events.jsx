@@ -12,7 +12,7 @@ const EventsSection = () => {
       {/* Section Header */}
       <div className="text-left px-10 pb-5">
         <p className="text-gray pt-[2%]">Just the best</p>
-        <h2 className="text-black text-4xl md:text-5xl font-semibold font-playfair overflow-visible">
+        <h2 className="text-black text-4xl md:text-5xl font-semibold font-neotriad overflow-visible">
           SOME OTHER EVENTS
         </h2>
       </div>

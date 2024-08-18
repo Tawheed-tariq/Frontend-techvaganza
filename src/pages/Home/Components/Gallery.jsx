@@ -36,8 +36,8 @@ const Gallery = () => {
   return (
     <div className="relative py-10">
       <div className='px-8'>
-        <p className="text-lg font-semibold text-gray-600">NIT SRINAGAR</p>
-        <h2 className="text-4xl font-bold uppercase overflow-hidden">Photo Gallery</h2>
+        <p className="text-lg font-semibold font-kodeMono text-gray-600">NIT SRINAGAR</p>
+        <h2 className="text-4xl font-bold font-neotriad uppercase overflow-hidden">Photo Gallery</h2>
       </div>
       <div
         className="overflow-hidden py-8 relative whitespace-nowrap"

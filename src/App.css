@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Averia+Serif+Libre:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Sanchez:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
 :root {
-    --primary-color: #64ECC9;
+    --primary-color: #3b5704;
     --secondary-color: #EDE7E7;
     --primary-font: 'Playfair Display', serif;
     --secondary-font: 'Averia Serif Libre', serif;
+}
+
+@font-face {
+    font-family: 'Neotriad Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Neotriad Regular'), url('./fonts/Neotriad-BF64f472e65d8f5.woff') format('woff');
 }
 
 *{
@@ -16,12 +24,12 @@
 }
 
 body{
-    background: url(background.png);
+    background: url('/common/Desktop - 1.png');
     overflow-x: hidden;    
 }
 
 .linear-bg{
-    background: linear-gradient(to bottom, #3b5704ee 0%,#3b57047f 50%, #3b570400 100%);
+    background: linear-gradient(to bottom, #000000 0%,#0000007f 50%, #00000000 100%);
 }
 
 /* Background Images */
@@ -90,9 +98,9 @@ body{
 }
 
 .ShadowLarge{
-    -webkit-box-shadow: 0px 0px 80px 0px rgba(59, 87, 4, 0.8);
-    -moz-box-shadow: 0px 0px 80px 0px rgba(59, 87, 4, 0.8);
-    box-shadow: 0px 0px 80px 0px rgba(59, 87, 4, 0.8);
+    -webkit-box-shadow: 0px 0px 70px 0px rgba(59, 87, 4, 0.8);
+    -moz-box-shadow: 0px 0px 70px 0px rgba(59, 87, 4, 0.8);
+    box-shadow: 0px 0px 70px 0px rgba(59, 87, 4, 0.8);
 }
 
 .CardShadow{
@@ -148,4 +156,15 @@ body{
     -webkit-box-shadow:0px 0px 26px 2px rgba(46,255,53,0.73);
     -moz-box-shadow: 0px 0px 26px 2px rgba(46,255,53,0.73);
     box-shadow: 0px 0px 26px 2px rgba(46,255,53,0.73);
+}
+
+
+/* text shadow  */
+
+.textShadow{
+    text-shadow: 1px 4px #81B622;
+}
+
+.textShadow-sm{
+    text-shadow: 1px 2px #26c460;
 }

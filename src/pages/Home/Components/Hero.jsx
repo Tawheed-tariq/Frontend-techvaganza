@@ -3,6 +3,7 @@ import Header from "../../../Components/Header";
 import { Link } from "react-router-dom";
 import Aos from "aos";
 import "aos/dist/aos.css";
+import { FaAddressCard } from "react-icons/fa6";
 
 function Hero() {
   const targetDate = "2024-09-20T00:00:00";
@@ -62,10 +63,10 @@ function Hero() {
 
   return (
     <div
-      className="bg-cover bg-center bg-blend-overlay min-h-screen"
+      className="bg-cover bg-center  min-h-screen"
       style={{
         backgroundImage:
-          "linear-gradient(to bottom, #000000 0%, #0000009f 50%, #00000033 100%), url(/common/hero-cover.png)",
+          "linear-gradient(to bottom, #000000 0%, #0000009f 50%, #00000033 100%), url(/common/6.png)",
       }}
     >
       <div>
@@ -75,18 +76,18 @@ function Hero() {
         <div
           data-aos="fade-down"
           data-aos-duration="2000"
-          className="date-text text-white text-2xl md:text-4xl text-center overflow-hidden xs:whitespace-nowrap"
+          className="date-text font-kodeMono text-white text-2xl md:text-4xl text-center overflow-hidden xs:whitespace-nowrap"
         >
           20
           <sup className="text-white text-xl md:text-2xl">th </sup>& 21
           <sup className="text-white text-xl md:text-2xl">st </sup>
           Sep 2024
         </div>
-        <p className="text-center text-6xl ss:text-7xl sm:text-8xl md:text-9xl mt-4 text-white font-playfair font-extrabold overflow-visible">
+        <p className="text-center text-6xl ss:text-7xl sm:text-8xl md:text-9xl mt-4 text-white font-neotriad font-extrabold overflow-visible textShadow">
           Techvaganza
         </p>
 
-        <div className="timer-container mt-6 md:mt-10 flex justify-center">
+        <div className="timer-container font-kodeMono mt-6 md:mt-10 flex justify-center">
           <div className="w-full min-w-150 mt-7 px-12 lg:px-40 flex flex-wrap gap-6 justify-between text-white font-bold overflow-hidden">
             <div data-aos="fade-down" className="text-center overflow-visible">
               <div className="block text-6xl md:text-9xl font-semibold overflow-visible">
@@ -138,17 +139,18 @@ function Hero() {
           <Link
             data-aos="fade-in"
             data-aos-delay="250"
-            className="rounded-full bg-primary text-secondary font-semibold py-4 px-10 font-sanchez custom-glow"
+            className="rounded-full flex gap-4 textShadow-sm items-center text-4xl text-secondary py-4 px-10 font-neotriad"
           >
-            Institute Registration
+            <FaAddressCard size={24}/>
+            <p className="underline-animate">[ Institute Registration ]</p>
           </Link>
-          <Link
+          {/* <Link
             data-aos="fade-in"
             data-aos-delay="500"
             className="rounded-full bg-primary text-secondary font-semibold py-4 px-10 font-sanchez custom-glow"
           >
             Attendee Registration
-          </Link>
+          </Link> */}
         </div>
       </div>
     </div>

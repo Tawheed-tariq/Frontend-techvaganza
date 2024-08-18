@@ -27,11 +27,11 @@ const Header = () => {
   return (
     <>
       <header
-        className="py-8 px-4 md:px-28 w-full linear-bg font-sanchez"
+        className="py-8 px-4 md:px-28 w-full linear-bg font-kodeMono"
       >
         <div className="flex flex-row justify-between items-center container mx-auto ">
           <Link to="/">
-            <img src="/logo.png" className="h-16" alt="Logo" />
+            <img src="/common/logo.svg" className="h-16" alt="Logo" />
           </Link>
 
           {/* Hamburger Button */}
@@ -41,7 +41,7 @@ const Header = () => {
             </button>
           </div>
 
-          <div className="hidden md:flex items-center md:space-x-14 large:space-x-16">
+          <div className="hidden md:flex font-semibold items-center md:space-x-14 large:space-x-16">
             <Link
               to="/"
               className="text-white hover:text-secondary underline-animate text-2xl relative inline-block"

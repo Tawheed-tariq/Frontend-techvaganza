@@ -38,13 +38,13 @@ const Card = ({ event, index }) => {
         }`}
       >
         <div data-aos={index % 2 === 0 ? "fade-left" : "fade-right"} className="p-6 ShadowLarge md:p-8 lg:p-10 bg-background h-full">
-          <div className="text-2xl  sm:text-3xl font-semibold mb-4 text-primary overflow-visible">
+          <div className="text-2xl font-neotriad sm:text-3xl font-semibold mb-4 text-primary overflow-visible">
             {event.title}
           </div>
-          <p className="mb-6 md:mb-8">{event.description}</p>
+          <p className="mb-6 font-kodeMono md:mb-8">{event.description}</p>
           <Link
             to={event.link}
-            className="px-3 md:px-6 py-3 ShadowBlur text-sm md:text-base rounded-md font-medium text-white bg-primary border border-primary text-center"
+            className="px-3 md:px-6 py-3 ShadowBlur font-kodeMono text-sm md:text-base rounded-md font-medium text-white bg-primary border border-primary text-center"
           >
             EXPLORE
           </Link>

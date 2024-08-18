@@ -22,13 +22,15 @@ export default {
         'secondary': '#EDE7E7',
         'highlightColor': '#64ECC966',
         'eventBorder': '#FFFFFF4D',
-        'background' : '#e7febc'
+        'background' : '#ffffff'
 
       },
       fontFamily: {
-        playfair: ['Playfair Display', 'serif'],
+        // playfair: ['Playfair Display', 'serif'],
         averia: ['Averia Serif Libre', 'cursive'],
         sanchez : ['Sanchez', 'serif'],
+        neotriad: ['Neotriad Regular', 'serif'],
+        kodeMono : ["Kode Mono", 'monospace']
       },
       boxShadow: {
         'card-default': '0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12)',

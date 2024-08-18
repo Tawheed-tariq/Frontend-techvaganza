@@ -17,15 +17,15 @@ function About() {
     <div className='px-4 sm:px-0 flex justify-center items-center'>
       <div data-aos="fade-down" className='p-8 my-40 bg-background sm:p-12 md:w-3/5 sm:w-4/5  ShadowLarge'>
         <div className='overflow-visible mb-5'>
-          <p className='text-xs sm:text-sm font-sanchez font-semibold'>
+          <p className='text-xs sm:text-sm font-kodeMono font-semibold'>
             NIT Srinagar's Annual Technical Fest
           </p>
-          <h2 className='text-primary text-4xl sm:text-5xl md:text-6xl overflow-visible font-semibold font-playfair mt-2'>
+          <h2 className='text-primary text-4xl sm:text-5xl md:text-6xl overflow-visible font-semibold font-neotriad mt-2'>
             Techvaganza
           </h2>
         </div>
         <div>
-          <p className='text-base sm:text-base md:text-base font-sanchez'>
+          <p className='text-base sm:text-base md:text-base font-kodeMono'>
             The Annual Cultural Fest at the National Institute of Technology,
             Srinagar, aptly named "Rang-e-Chinar," is a dazzling spectacle of
             talent and creativity that leaves no stone unturned in showcasing

@@ -16,7 +16,7 @@ const EventCard = ({ title, time, location, backgroundImage, link, index }) => {
           style={{ backgroundImage: `url(${backgroundImage})` }}
         >
           <div className="w-full h-72 text-left flex flex-col justify-between">
-            <h1 className="text-secondary text-4xl font-serif font-semibold overflow-visible">
+            <h1 className="text-secondary text-4xl font-neotriad font-semibold overflow-visible">
               {title}
             </h1>
             <ul className="text-white text-lg font-serif">
