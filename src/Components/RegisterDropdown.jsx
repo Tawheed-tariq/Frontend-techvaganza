@@ -40,19 +40,19 @@ const RegisterDropdown = ({ isDropdownOpen, position }) => {
     >
       <Link
         to="/register/attendee"
-        className="block px-4 py-2 text-sm text-white hover:bg-teal-300 hover:bg-opacity-30"
+        className="block px-4 py-2 text-sm text-white hover:bg-background hover:bg-opacity-30"
       >
         Attendee Register
       </Link>
       <Link
         to="/register/student"
-        className="block px-4 py-2 text-sm text-white hover:bg-teal-300 hover:bg-opacity-30"
+        className="block px-4 py-2 text-sm text-white hover:bg-background hover:bg-opacity-30"
       >
         Student Register
       </Link>
       <Link
         to="/register/committee"
-        className="block px-4 py-2 text-sm text-white hover:bg-teal-300 hover:bg-opacity-30"
+        className="block px-4 py-2 text-sm text-white hover:bg-background hover:bg-opacity-30"
       >
         Committee Register
       </Link>

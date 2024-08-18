@@ -2,6 +2,8 @@ import "../App.css";
 import Header from "./Header";
 import Footer from "./Footer";
 import StickySocialSidebar from "../pages/Home/Components/StickySocialSidebar";
+import PropTypes from "prop-types";
+
 export default function PageLayout({ title, imgUrl, children }) {
   return (
     <>
@@ -35,3 +37,10 @@ export default function PageLayout({ title, imgUrl, children }) {
     </>
   );
 }
+
+
+PageLayout.propTypes = {
+  title: PropTypes.string.isRequired,
+  imgUrl: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+};

@@ -1,7 +1,9 @@
 import EventCard from "./EventCard";
+import PropTypes from "prop-types";
+
 const EventsPageLayout = ({events}) => {
     return (
-      <div className="bg-[#edffcc]">
+      <div className="bg-[#edffcc] ShadowLarge">
         <div className="font-playfair px-8 pt-8 ">
           <p className="text-base text-black text-opacity-80">Explore</p>
           <p className="text-primary font-extrabold text-5xl leading-normal">
@@ -26,3 +28,7 @@ const EventsPageLayout = ({events}) => {
 
   
 export default EventsPageLayout;
+
+EventsPageLayout.propTypes = {  
+  events: PropTypes.array.isRequired,
+};

@@ -24,13 +24,13 @@ const ResourceDropdownMenu = ({ isDropdownOpen, position }) => {
     >
       <Link
         to="/schedule"
-        className="block px-4 py-2 text-sm text-white hover:bg-teal-300 hover:bg-opacity-30"
+        className="block px-4 py-2 text-sm text-white hover:bg-background hover:bg-opacity-30"
       >
         Schedule
       </Link>
       <Link
         to="/bronche"
-        className="block px-4 py-2 text-sm text-white hover:bg-teal-300 hover:bg-opacity-30"
+        className="block px-4 py-2 text-sm text-white hover:bg-background hover:bg-opacity-30"
       >
         Bronche
       </Link>

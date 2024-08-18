@@ -1,8 +1,23 @@
 import { Link } from "react-router-dom";
+import Aos from "aos";
+import "aos/dist/aos.css"
+import { useEffect } from "react";
+import PropTypes from "prop-types";
 
-const CategoryCard = ({ img, title, url }) => {
+
+const CategoryCard = ({ img, title, url, index }) => {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      anchorPlacement: "top-center",
+      disable: "Phone",
+      startEvent: "DOMContentLoaded",
+      easing: "ease-out",
+      mirror: true,
+    });
+  }, []);
   return (
-    <div className="mb-5">
+    <div data-aos="fade-down" data-aos-delay={index*100} className="mb-5 CardShadow">
       <img className="h-[450px] w-96 md:w-80 overflow-hidden" src={img} alt={title + " image"} />
       <div className="p-4 bg-background font-sanchez ">
         <p className="text-3xl text-primary bg-opacity-70 font-semibold overflow-visible">{title}</p>
@@ -17,3 +32,10 @@ const CategoryCard = ({ img, title, url }) => {
 };
 
 export default CategoryCard;
+
+CategoryCard.propTypes = {
+  img: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+  index: PropTypes.number.isRequired,
+};

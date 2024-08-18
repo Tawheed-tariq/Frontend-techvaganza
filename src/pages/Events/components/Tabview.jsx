@@ -1,5 +1,5 @@
 import { Tab, TabList, TabPanel, Tabs } from "react-tabs";
-
+import PropTypes from "prop-types";
 const TabView = ({ data }) => {
   return (
     <>
@@ -53,3 +53,8 @@ const TabView = ({ data }) => {
 };
 
 export default TabView;
+
+
+TabView.propTypes = { 
+  data: PropTypes.object.isRequired,
+};
