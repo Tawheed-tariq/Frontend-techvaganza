@@ -11,12 +11,12 @@ export default function EventCard({title, time, venue, url, image}) {
             src="/events/meme.jpg"
             alt=""
           />
-        <div className="mt-[280px] md:mt-[340px] w-full font-playfair">
-          <p className="font-semibold text-2xl text-primary">
+        <div className="mt-[280px] md:mt-[340px] w-full">
+          <p className="font-semibold font-neotriad text-2xl text-primary">
             {title}
           </p>
-          <p className="text-sm md:text-base text-gray-900 font-semibold">{time}</p>
-          <p className="text-base text-gray-600 mt-3">{venue}</p>
+          <p className="text-sm md:text-base text-gray-900 font-semibold font-kodeMono">{time}</p>
+          <p className="text-base text-gray-600 mt-3 font-kodeMono">{venue}</p>
         </div>
       </Link>
     </>

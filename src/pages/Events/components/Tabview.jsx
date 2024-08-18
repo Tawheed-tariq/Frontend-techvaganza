@@ -4,7 +4,7 @@ const TabView = ({ data }) => {
   return (
     <>
       <Tabs>
-        <TabList className="flex md:gap-5 my-3">
+        <TabList className="flex md:gap-5 my-3 font-kodeMono">
           <Tab
             className="px-14 py-3 text-base font-medium text-primary bg-white border-primary focus:outline-none hover:bg-[#e3dbcc] text-center border-2 cursor-pointer"
             selectedClassName="active-tab"
@@ -20,16 +20,16 @@ const TabView = ({ data }) => {
         </TabList>
         <div className="BoxShadow mx-2 my-2 px-3 py-4 pb-12">
           <TabPanel>
-            <h1 className="entry-header text-3xl text-primary font-semibold mb-4 mt-4 mx-2 leading-normal">Rules/Prizes</h1>
-            <div className="space-y-5 mx-4 font-semibold">
+            <h1 className="entry-header text-3xl text-primary font-semibold font-neotriad mb-4 mt-4 mx-2 leading-normal">Rules/Prizes</h1>
+            <div className="space-y-5 mx-4 font-semibold font-kodeMono">
               {data.rules.map((rule) => (
                 <p>{rule}</p>
               ))}
             </div>
 
             <hr className="mt-4 border border-primary" />
-            <h1 className="entry-header text-3xl text-primary font-semibold mb-4 mt-4 mx-2 leading-normal">Prizes</h1>
-            <div className="space-y-5 mx-4 font-semibold">
+            <h1 className="entry-header text-3xl text-primary font-semibold font-neotriad mb-4 mt-4 mx-2 leading-normal">Prizes</h1>
+            <div className="space-y-5 mx-4 font-semibold font-kodeMono">
               {data.prizes.map((prize) => (
                 <p>{prize}</p>
               ))}
@@ -37,10 +37,10 @@ const TabView = ({ data }) => {
           </TabPanel>
 
           <TabPanel>
-            <h2 className="entry-header text-3xl text-primary font-semibold mb-4 mt-4 mx-2 leading-normal">
+            <h2 className="entry-header text-3xl text-primary font-semibold font-neotriad mb-4 mt-4 mx-2 leading-normal">
               Judging Criteria
             </h2>
-            <div className="space-y-5 mx-4 font-semibold">
+            <div className="space-y-5 mx-4 font-semibold font-kodeMono">
               {data.judgingCriteria.map((criteria) => (
                 <p>{criteria}</p>
               ))}

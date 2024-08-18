@@ -8,9 +8,9 @@ import { useEffect } from "react";
 
 const EventsSection = () => {
   return (
-    <div className="flex flex-col py-10 md:px-10">
+    <div className="flex flex-col py-10 px-4 md:px-[140px] lg:px-[160px] lg2:px-[200px] xl:px-[280px] xl2:px-[320px]">
       {/* Section Header */}
-      <div className="text-left px-10 pb-5">
+      <div className="text-left pb-5">
         <p className="text-gray pt-[2%]">Just the best</p>
         <h2 className="text-black text-4xl md:text-5xl font-semibold font-neotriad overflow-visible">
           SOME OTHER EVENTS

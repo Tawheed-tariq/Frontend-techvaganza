@@ -76,7 +76,7 @@ function Hero() {
         <div
           data-aos="fade-down"
           data-aos-duration="2000"
-          className="date-text font-kodeMono text-white text-2xl md:text-4xl text-center overflow-hidden xs:whitespace-nowrap"
+          className="font-semibold font-kodeMono text-white text-2xl md:text-4xl text-center overflow-hidden xs:whitespace-nowrap"
         >
           20
           <sup className="text-white text-xl md:text-2xl">th </sup>& 21
@@ -136,14 +136,16 @@ function Hero() {
           </div>
         </div>
         <div className="flex flex-col items-center justify-center md:flex-row gap-8 md:gap-7 py-10 md:mt-8">
-          <Link
-            data-aos="fade-in"
-            data-aos-delay="250"
-            className="rounded-full flex gap-4 textShadow-sm items-center text-4xl text-secondary py-4 px-10 font-neotriad"
-          >
-            <FaAddressCard size={24}/>
-            <p className="underline-animate">[ Institute Registration ]</p>
-          </Link>
+          <div className="flex gap-4 items-center text-secondary">
+            <FaAddressCard size={24} />
+            <Link
+              data-aos="fade-in"
+              data-aos-delay="250"
+              className="flex gap-4 items-center underline-animate textShadow-sm text-4xl  font-neotriad"
+            >
+              [ Register Yourself ]
+            </Link>
+          </div>
           {/* <Link
             data-aos="fade-in"
             data-aos-delay="500"
