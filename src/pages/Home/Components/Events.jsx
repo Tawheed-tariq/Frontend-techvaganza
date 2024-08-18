@@ -8,7 +8,7 @@ import { useEffect } from "react";
 
 const EventsSection = () => {
   return (
-    <div className="flex flex-col  md:p-10">
+    <div className="flex flex-col py-10 md:px-10">
       {/* Section Header */}
       <div className="text-left px-10 pb-5">
         <p className="text-gray pt-[2%]">Just the best</p>

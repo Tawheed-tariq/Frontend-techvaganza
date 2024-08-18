@@ -33,7 +33,7 @@ const Card = ({ event, index }) => {
         />
       </div>
       <div
-        className={`w-full py-20 px-20 md:max-w-4xl relative  ${
+        className={`w-full md:py-16 md:px-16 lg2:max-w-4xl relative  ${
           index % 2 === 0 ? 'sm:-translate-x-40' : 'sm:translate-x-40'
         }`}
       >
