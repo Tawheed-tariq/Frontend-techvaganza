@@ -76,24 +76,24 @@ function Hero() {
         <div
           data-aos="fade-down"
           data-aos-duration="2000"
-          className="font-semibold font-kodeMono text-white text-2xl md:text-4xl text-center overflow-hidden xs:whitespace-nowrap"
+          className="font-semibold font-kodeMono text-white text-xl ss:text-2xl md:text-4xl text-center overflow-visible xs:whitespace-nowrap"
         >
           20
           <sup className="text-white text-xl md:text-2xl">th </sup>& 21
           <sup className="text-white text-xl md:text-2xl">st </sup>
           Sep 2024
         </div>
-        <p className="text-center text-6xl ss:text-7xl sm:text-8xl md:text-9xl mt-4 text-white font-neotriad font-extrabold overflow-visible textShadow">
+        <p className="text-center text-5xl ss:text-7xl sm:text-8xl md:text-9xl mt-4 text-white font-neotriad font-extrabold overflow-visible textShadow">
           Techvaganza
         </p>
 
-        <div className="timer-container font-kodeMono mt-6 md:mt-10 flex justify-center">
+        <div className="font-kodeMono mt-6 md:mt-10 flex justify-center">
           <div className="w-full min-w-150 mt-7 px-12 lg:px-40 flex flex-wrap gap-6 justify-between text-white font-bold overflow-hidden">
             <div data-aos="fade-down" className="text-center overflow-visible">
               <div className="block text-6xl md:text-9xl font-semibold overflow-visible">
                 {timeLeft.days}
               </div>
-              <div className="timer-label block text-lg md:text-3xl overflow-visible">
+              <div className=" block text-lg md:text-3xl overflow-visible">
                 DAYS
               </div>
             </div>
@@ -105,7 +105,7 @@ function Hero() {
               <div className="block text-6xl md:text-9xl font-semibold overflow-visible">
                 {timeLeft.hours}
               </div>
-              <div className="timer-label block text-lg md:text-3xl overflow-visible">
+              <div className="block text-lg md:text-3xl overflow-visible">
                 HOURS
               </div>
             </div>
@@ -117,7 +117,7 @@ function Hero() {
               <div className="block text-6xl md:text-9xl font-semibold overflow-visible">
                 {timeLeft.minutes}
               </div>
-              <div className="timer-label block text-lg md:text-3xl overflow-visible">
+              <div className=" block text-lg md:text-3xl overflow-visible">
                 MINUTES
               </div>
             </div>
@@ -129,7 +129,7 @@ function Hero() {
               <div className="block text-6xl md:text-9xl font-semibold overflow-visible">
                 {timeLeft.seconds}
               </div>
-              <div className="timer-label block text-lg md:text-3xl overflow-visible">
+              <div className=" block text-lg md:text-3xl overflow-visible">
                 SECONDS
               </div>
             </div>
@@ -140,8 +140,8 @@ function Hero() {
             <FaAddressCard size={24} />
             <Link
               data-aos="fade-in"
-              data-aos-delay="250"
-              className="flex gap-4 items-center underline-animate textShadow-sm text-4xl  font-neotriad"
+              data-aos-delay="500"
+              className="flex gap-4 items-center underline-animate textShadow-sm text-2xl md:text-4xl  font-neotriad"
             >
               [ Register Yourself ]
             </Link>
