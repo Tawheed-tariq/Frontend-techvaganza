@@ -1,11 +1,5 @@
-import React, { useRef, useState, useEffect } from 'react';
-
-const images = [
-  { src: '/slider-1.jpg', alt: 'Slider 1', title: 'TECHVAGANZA', description: 'Image 1 Description' },
-  { src: '/slider-2.jpg', alt: 'Slider 2', title: 'TECHVAGANZA', description: 'Image 2 Description' },
-  { src: '/slider-3.jpg', alt: 'Slider 3', title: 'TECHVAGANZA', description: 'Image 3 Description' },
-  { src: '/slider-4.jpg', alt: 'Slider 3', title: 'TECHVAGANZA', description: 'Image 3 Description' },
-];
+import { useRef, useState, useEffect } from 'react';
+import {images} from '../../../constants/home-events';
 
 const Gallery = () => {
   const galleryRef = useRef(null);

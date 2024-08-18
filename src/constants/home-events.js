@@ -80,5 +80,32 @@ export const demoEvents = [
       backgroundImage: "/card-bg1.jpg",
       link: "#",
     },
-  ]
+  ];
+
+export const images = [
+    { 
+      src: '/slider-1.jpg', 
+      alt: 'Slider 1', 
+      title: 'TECHVAGANZA', 
+      description: 'Image 1 Description' 
+    },
+    { 
+      src: '/slider-2.jpg', 
+      alt: 'Slider 2', 
+      title: 'TECHVAGANZA', 
+      description: 'Image 2 Description' 
+    },
+    { 
+      src: '/slider-3.jpg', 
+      alt: 'Slider 3', 
+      title: 'TECHVAGANZA', 
+      description: 'Image 3 Description' 
+    },
+    { 
+      src: '/slider-4.jpg', 
+      alt: 'Slider 3', 
+      title: 'TECHVAGANZA', 
+      description: 'Image 3 Description' 
+    },
+  ];
   
