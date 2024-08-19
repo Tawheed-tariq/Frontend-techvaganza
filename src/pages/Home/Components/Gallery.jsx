@@ -53,7 +53,7 @@ const Gallery = () => {
               alt={image.alt}
               className="h-96 w-full object-cover"
             />
-            <div className="absolute top-0 left-0 w-full h-full p-4 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 flex flex-col justify-center items-center">
+            <div className="absolute top-0 left-0 w-full h-full p-4 bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300 ease-in flex flex-col justify-center items-center">
               <h2 className="text-2xl font-bold text-white mb-4">{image.title}</h2>
               <p className="text-xl text-white">{image.description}</p>
             </div>
