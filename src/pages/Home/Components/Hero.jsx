@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect, useRef,useCallback } from "react";
 import Header from "../../../Components/Header";
 import { Link } from "react-router-dom";
 import Aos from "aos";
@@ -49,6 +49,38 @@ function Hero() {
     return () => clearTimeout(timer);
   });
 
+// scrambling text animation 
+  const [scrambledText, setScrambledText] = useState("Techvaganza");
+  const textRef = useRef(null);
+  const letters = "abcdefghijklmnopqrstuvwxyz";
+  const originalText = "Techvaganza";
+
+  const scrambleText = useCallback(() => {
+    let iteration = 0;
+    const interval = setInterval(() => {
+      setScrambledText(prev => 
+        prev.split("").map((letter, index) => {
+          if (index < iteration) {
+            return originalText[index];
+          }
+          return letters[Math.floor(Math.random() * 26)];
+        }).join("")
+      );
+
+      if (iteration >= originalText.length) {
+        clearInterval(interval);
+      }
+
+      iteration += 1 / 3;
+    }, 50);
+  }, []);
+
+  useEffect(() => {
+    scrambleText();
+    const intervalId = setInterval(scrambleText, 10000);
+    return () => clearInterval(intervalId);
+  }, [scrambleText]);
+
   // Animate on scroll initialization
   useEffect(() => {
     Aos.init({
@@ -83,8 +115,11 @@ function Hero() {
           <sup className="text-white text-xl md:text-2xl">st </sup>
           Sep 2024
         </div>
-        <p className="text-center text-5xl ss:text-7xl sm:text-8xl md:text-9xl mt-4 text-white font-neotriad font-extrabold overflow-visible textShadow">
-          Techvaganza
+        <p 
+          ref={textRef}
+          className="text-center text-5xl ss:text-7xl sm:text-8xl md:text-9xl mt-4 text-white font-neotriad font-extrabold overflow-visible textShadow"
+        >
+          {scrambledText}
         </p>
 
         <div className="font-kodeMono mt-6 md:mt-10 flex justify-center">

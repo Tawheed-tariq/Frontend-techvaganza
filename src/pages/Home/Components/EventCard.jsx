@@ -1,4 +1,5 @@
 import { FaDiamond } from "react-icons/fa6";
+import { FaExternalLinkAlt } from "react-icons/fa";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 
@@ -12,31 +13,30 @@ const EventCard = ({ title, time, location, backgroundImage, link, index }) => {
       >
         <div
           className="relative bg-cover bg-center flex flex-col justify-between rounded-lg text-secondary items-center
-           font-semibold m-auto md:max-w-96 brightness-75 bg-blend-overlay px-4 py-6 transition-transform transform hover:scale-105 hover:z-10"
-          style={{ backgroundImage: `url(${backgroundImage})` }}
+           font-semibold m-auto md:max-w-96 bg-blend-overlay px-4 py-6 transition-transform transform hover:scale-105 hover:z-10"
+           style={{
+            backgroundImage:
+              `linear-gradient(to bottom, #000000 0%, #0000009f 50%, #00000033 100%), url(${backgroundImage})`,
+          }}
         >
-          <div className="w-full h-72 text-left flex flex-col justify-between">
-            <h1 className="text-secondary text-4xl font-neotriad font-semibold overflow-visible">
-              {title}
-            </h1>
-            <ul className="text-white text-lg font-serif">
-              <li className="flex items-center">
-                <FaDiamond className="w-4 h-4 text-secondary mr-2" />
-                {time}
-              </li>
-              <li className="flex items-center">
-                <FaDiamond className="w-4 h-4 text-secondary mr-2" />
-                {location}
-              </li>
-            </ul>
-          </div>
-          <div className="link absolute top-2 right-2 overflow-visible">
-            <Link to={link}>
-              <img
-                src="/box.png"
-                alt="link"
-                className="rounded-full transform z-40 hover:scale-110 transition-transform duration-300 ease-in-out"
-              />
+          <div className="w-full h-72 flex flex-col items-start justify-between font-kodeMono">
+            <div>
+              <h1 className="text-secondary text-4xl font-neotriad font-semibold overflow-visible mb-8">
+                {title}
+              </h1>
+              <ul className="text-white font-semibold text-lg">
+                <li className="flex items-center">
+                  <FaDiamond className="w-4 h-4 text-secondary mr-2" />
+                  {time}
+                </li>
+                <li className="flex items-center">
+                  <FaDiamond className="w-4 h-4 text-secondary mr-2" />
+                  {location}
+                </li>
+              </ul>
+            </div>
+            <Link className="flex gap-4 items-center font-semibold border px-6 py-3 rounded-full border-gray-50 ShadowBlur">
+              <p>Event Details</p>  <FaExternalLinkAlt size={18} />
             </Link>
           </div>
         </div>
