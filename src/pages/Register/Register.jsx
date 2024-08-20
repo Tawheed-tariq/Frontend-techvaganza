@@ -1,17 +1,8 @@
+import PageLayout from "../../Components/PageLayout";
 
-export default function Register(){
-    return(
-        <>
-           {/*  <div class="background-image bg-1"></div>
-            <div class="background-image bg-2"></div>
-
-            <div class="glass-layer"></div> */}
-
-            <div class="content">
-                <div >
-                    <h1>Register</h1>
-                </div>
-            </div>
-        </>
-    )
+export default function Register() {
+  return (
+    <PageLayout title={"Register"} imgUrl={"/events/visual-cover.jpg"}>
+    </PageLayout>
+  );
 }

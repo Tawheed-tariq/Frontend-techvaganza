@@ -61,7 +61,7 @@ const LinkBtn = ({ title, link, index}) => {
       data-aos= "fade-down"
       data-aos-delay = {50*index}
       to={link}
-      className="bg-primary text-white font-sanchez px-8 py-3 rounded-full text-base ShadowBlur"
+      className="bg-primary text-white font-kodeMono px-8 py-3 rounded-full text-base ShadowBlur"
     >
       {title}
     </Link>

@@ -98,7 +98,7 @@ function Hero() {
       className="bg-cover bg-center  min-h-screen"
       style={{
         backgroundImage:
-          "linear-gradient(to bottom, #000000 0%, #0000009f 50%, #00000033 100%), url(/common/6.png)",
+          "linear-gradient(to bottom, #000000 0%, #0000009f 50%, #00000033 100%), url(/common/hero-cover.png)",
       }}
     >
       <div>
@@ -184,7 +184,7 @@ function Hero() {
           {/* <Link
             data-aos="fade-in"
             data-aos-delay="500"
-            className="rounded-full bg-primary text-secondary font-semibold py-4 px-10 font-sanchez custom-glow"
+            className="rounded-full bg-primary text-secondary font-semibold py-4 px-10 font-kodeMono custom-glow"
           >
             Attendee Registration
           </Link> */}

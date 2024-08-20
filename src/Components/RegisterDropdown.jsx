@@ -39,7 +39,7 @@ const RegisterDropdown = ({ isDropdownOpen, position }) => {
       }}
     >
       <Link
-        to="/register/attendee"
+        to="/register"
         className="block px-4 py-2 text-sm text-white hover:bg-background hover:bg-opacity-30"
       >
         Attendee Register
