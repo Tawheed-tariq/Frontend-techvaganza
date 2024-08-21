@@ -176,6 +176,7 @@ function Hero() {
             <Link
               data-aos="fade-in"
               data-aos-delay="500"
+              to={'/register'}
               className="flex gap-4 items-center underline-animate textShadow-sm text-2xl md:text-4xl  font-neotriad"
             >
               [ Register Yourself ]
