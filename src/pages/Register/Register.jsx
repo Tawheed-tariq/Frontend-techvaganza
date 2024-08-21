@@ -7,7 +7,9 @@ export default function Register() {
     lastname: "",
     email: "",
     contact: "",
-    college: "",
+    college: "NITS",
+    collegename : "NIT Srinagar",
+    enrollmentNumber: "",
     address: "",
   });
 
@@ -35,12 +37,12 @@ export default function Register() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if (handleValidation()) {
+    // if (handleValidation()) {
       console.log(values);
       // submit form logic here
-    } else {
-      console.log("Please fill in all fields.");
-    }
+    // } else {
+    //   console.log("Please fill in all fields.");
+    // }
   };
 
   return (
@@ -127,7 +129,7 @@ export default function Register() {
               />
             </div>
           </div>
-          {/* College dropdown */}
+          {/* College */}
           <div className="px-8 py-4">
             <div className="flex flex-col w-full px-4">
               <label
@@ -143,12 +145,58 @@ export default function Register() {
                 onChange={handleChange}
                 className="border border-primary bg-transparent text-black font-kodeMono font-medium text-md px-4 py-2 focus:outline-none"
               >
-                <option value="">Select your college</option>
-                <option value="NITS">NIT Srinagar</option>
-                <option value="other">Other</option>
+                <option value="NITS">
+                  NIT Srinagar Students
+                </option>
+                <option value="Other Institute Students">
+                  Other
+                </option>
               </select>
             </div>
           </div>
+          {/* Enrollment Number (only for NIT Srinagar Students) */}
+          {values.college === "NITS" ? (
+            <div className="px-8 py-4">
+              <div className="flex flex-col w-full px-4">
+                <label
+                  htmlFor="enrollmentNumber"
+                  className="text-primary font-neotriad font-bold text-2xl mb-2"
+                >
+                  Enrollment Number
+                </label>
+                <input
+                  onChange={handleChange}
+                  type="text"
+                  name="enrollmentNumber"
+                  id="enrollmentNumber"
+                  placeholder="Enrollment Number"
+                  className="border border-primary bg-transparent text-black font-kodeMono font-medium text-md px-4 py-2 focus:outline-none"
+                />
+              </div>
+            </div>
+          )
+          :
+          (
+            <div className="px-8 py-4">
+              <div className="flex flex-col w-full px-4">
+                <label
+                  htmlFor="collegename"
+                  className="text-primary font-neotriad font-bold text-2xl mb-2"
+                >
+                  Institution Name
+                </label>
+                <input
+                  onChange={handleChange}
+                  type="text"
+                  name="collegename"
+                  id="collegename"
+                  placeholder="Institution Name"
+                  className="border border-primary bg-transparent text-black font-kodeMono font-medium text-md px-4 py-2 focus:outline-none"
+                />
+              </div>
+            </div>
+          )
+        }
           {/* Address */}
           <div className="px-8 py-4">
             <div className="flex flex-col w-full px-4">
@@ -170,7 +218,7 @@ export default function Register() {
           </div>
           {/* Submit button */}
           <div className="px-8 py-4 flex justify-center">
-            <button className="bg-primary text-secondary font-semibold py-4 px-10 font-kodeMono custom-glow">
+            <button className="bg-primary text-secondary font-semibold py-4 px-10 font-kodeMono ">
               Register
             </button>
           </div>
