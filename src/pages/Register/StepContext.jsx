@@ -1,4 +1,4 @@
-import { Children, createContext, useState } from "react";
+import { createContext, useState } from "react";
 export const MultiStepContext = createContext();
 export default function StepContext({children}) {
     const [currStep, setCurrStep] = useState(1);
@@ -8,23 +8,18 @@ export default function StepContext({children}) {
         email: "",
         contact: "",
         college: "NITS",
-        collegename : "NIT Srinagar",
+        collegename : "",
         enrollmentNumber: "",
         address: "",
+        totalPrice: 0,
       });
     const [finalData, setFinalData] = useState({});
-    // const submitData = () => {
-    //     setFinalData((prev) => [...prev, userData]);
-    //     setUserData([]);
-    //     setCurrStep(0);
-    //     if (finalData.length > 0) {
-    //         console.log("Data submitted successfully");
-    //         console.log(finalData);
-    //     }
-    // };
+    const submitData = () => {
+        console.log(userData);
+    };
     return (
         <>
-            <MultiStepContext.Provider value={{ currStep, setCurrStep, userData, setUserData, finalData, setFinalData }}>
+            <MultiStepContext.Provider value={{ currStep, setCurrStep, userData, setUserData, finalData, setFinalData, submitData }}>
                 {children}
             </MultiStepContext.Provider>
         </>

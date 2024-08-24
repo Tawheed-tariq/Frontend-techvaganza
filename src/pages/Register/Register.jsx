@@ -4,7 +4,7 @@ import Confirmation from "./components/Confirmation";
 import { useContext } from "react";
 import { MultiStepContext } from "./StepContext";
 export default function Register() {
-  const { currStep, finalData } = useContext(MultiStepContext);
+  const { currStep } = useContext(MultiStepContext);
   const showStep = (step) => {
     switch (step) {
       case 1:
