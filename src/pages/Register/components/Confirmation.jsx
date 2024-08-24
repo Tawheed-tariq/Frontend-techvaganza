@@ -3,7 +3,7 @@ import PageLayout from "../../../Components/PageLayout";
 import { MultiStepContext } from "../StepContext";
 
 export default function Confirmation() {
-  const { setCurrStep, userData } = useContext(MultiStepContext);
+  const { setCurrStep, userData, submitData } = useContext(MultiStepContext);
 
   const selectedEvents = Object.keys(userData.events || {}).filter(
     (event) => userData.events[event]
@@ -22,13 +22,16 @@ export default function Confirmation() {
             <p className="text-2xl font-medium font-neotriad text-primary">
               Selected Events:
             </p>
-            <ul className="list-disc list-inside mt-4 space-y-2">
+            {userData.events && <ul className="list-disc list-inside mt-4 space-y-2">
               {selectedEvents.map((event, index) => (
                 <li key={index} className="text-lg font-kodeMono text-gray-700">
                   {event}: {userData.pricing[event]}
                 </li>
               ))}
-            </ul>
+            </ul>}
+            {
+              !userData.events && selectedEvents.length === 0 && <p className="text-lg font-kodeMono text-gray-700">No events selected</p>
+            }
           </div>
           <div className="mt-8 p-4 bg-white rounded-lg ">
             <p className="text-xl  font-medium">
@@ -44,10 +47,10 @@ export default function Confirmation() {
             Change
           </button>
           <button
-            // onClick={() => setCurrStep((prev) => prev + 1)}
+            onClick={submitData}
             className="bg-primary text-secondary font-semibold py-4 px-10 font-kodeMono "
           >
-            Pay
+            {userData.totalPrice === 0 ? "Confirm" : "Pay"}
           </button>
         </div>
       </div>

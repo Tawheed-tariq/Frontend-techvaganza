@@ -1,6 +1,10 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import PageLayout from "../../../Components/PageLayout";
 import { MultiStepContext } from "../StepContext";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+
 export default function PersonalDetails() {
   const { setCurrStep, userData, setUserData } = useContext(MultiStepContext);
 
@@ -10,6 +14,50 @@ export default function PersonalDetails() {
       [event.target.name]: event.target.value,
     });
   };
+  const toastOptions = {
+    position: "top-right",
+    autoClose: 4000,
+    pauseOnHover: true,
+    draggable: true
+  }
+
+  const handleValidation = () => {
+    if (userData.firstname === "" || userData.lastname === "") {
+      toast.error("Please enter your full name", toastOptions);
+      return false;
+    }
+    if (userData.email === "") {
+      toast.error("Please enter your email", toastOptions);
+      return false;
+    }
+    if (userData.contact === "") {
+      toast.error("Please enter your contact number", toastOptions);
+      return false;
+    }
+    if (userData.college === "") {
+      toast.error("Please select your college", toastOptions);
+      return false;
+    }
+    if (userData.college === "NITS" && userData.enrollmentNumber === "") {
+      toast.error("Please enter your enrollment number", toastOptions);
+      return false;
+    }
+    if (userData.college === "Other Institute Students" && userData.collegename === "") {
+      toast.error("Please enter your institution name", toastOptions);
+      return false;
+    }
+    if (userData.address === "") {
+      toast.error("Please enter your address", toastOptions);
+      return false;
+    }
+    return true;
+  }
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    if(handleValidation()) 
+      setCurrStep((prev) => prev + 1);;
+  }
 
   return (
     <PageLayout title={"Register"} imgUrl={"/events/visual-cover.jpg"}>
@@ -178,7 +226,8 @@ export default function PersonalDetails() {
           {/* Submit button */}
           <div className="px-8 py-4 flex justify-center">
             <button
-              onClick={() => setCurrStep((prev) => prev + 1)}
+              // onClick={() => setCurrStep((prev) => prev + 1)}
+              onClick={handleSubmit}
               className="bg-primary text-secondary font-semibold py-4 px-10 font-kodeMono "
             >
               Next
@@ -186,6 +235,7 @@ export default function PersonalDetails() {
           </div>
         </form>
       </div>
+      <ToastContainer />
     </PageLayout>
   );
 }

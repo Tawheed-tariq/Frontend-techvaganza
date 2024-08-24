@@ -114,12 +114,6 @@ export default function EventDetails() {
           </div>
           <div className="px-8 py-4 flex items-center gap-8 justify-center">
             <button
-              onClick={() => setCurrStep((prev) => prev - 1)}
-              className="bg-primary text-secondary font-semibold py-4 px-10 font-kodeMono "
-            >
-              Back
-            </button>
-            <button
               onClick={() => setCurrStep((prev) => prev + 1)}
               className="bg-primary text-secondary font-semibold py-4 px-10 font-kodeMono "
             >
