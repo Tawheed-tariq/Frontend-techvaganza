@@ -55,7 +55,7 @@ export default function PersonalDetails() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    if(handleValidation()) 
+    // if(handleValidation()) 
       setCurrStep((prev) => prev + 1);;
   }
 

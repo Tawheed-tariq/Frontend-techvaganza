@@ -8,10 +8,33 @@ export default function EventDetails() {
 
   const handleCheckboxChange = (event) => {
     const { name, checked } = event.target;
-    setUserData((prevData) => ({
-      ...prevData,
-      events: { ...prevData.events, [name]: checked },
-    }));
+    setUserData((prevData) => {
+      const newEvents = { ...prevData.events };
+      const newPricing = { ...prevData.pricing };
+
+      if (checked) {
+        // Automatically check the first radio button when the checkbox is selected
+        const firstPricingOption = Object.keys(
+          events.find((e) => e.title === name).entryFee[
+            userData.college === "NITS"
+              ? "NIT Srinagar Students"
+              : "Other Institute Students"
+          ]
+        )[0];
+        newEvents[name] = true;
+        newPricing[name] = firstPricingOption;
+      } else {
+        // Remove the event from the events object and pricing object when the checkbox is unchecked
+        delete newEvents[name];
+        delete newPricing[name];
+      }
+
+      return {
+        ...prevData,
+        events: newEvents,
+        pricing: newPricing,
+      };
+    });
   };
 
   const handleRadioChange = (event) => {
@@ -95,6 +118,7 @@ export default function EventDetails() {
                           }
                           onChange={handleRadioChange}
                           className="h-4 w-4 text-primary focus:ring-primary border-gray-300"
+                          disabled={!userData.events?.[event.title]} // Disable radio if checkbox is not checked
                         />
                         <span className="text-base text-gray-700">
                           {pricingOption} -{" "}
@@ -108,14 +132,14 @@ export default function EventDetails() {
             ))}
           </form>
           <div className="mt-8 p-4 bg-white rounded-lg ">
-            <p className="text-xl  font-medium">
+            <p className="text-xl font-medium">
               <span className="font-neotriad text-primary font-semibold text-3xl">Total Price:</span> ₹ {userData.totalPrice}
             </p>
           </div>
           <div className="px-8 py-4 flex items-center gap-8 justify-center">
             <button
               onClick={() => setCurrStep((prev) => prev + 1)}
-              className="bg-primary text-secondary font-semibold py-4 px-10 font-kodeMono "
+              className="bg-primary text-secondary font-semibold py-4 px-10 font-kodeMono"
             >
               Next
             </button>
