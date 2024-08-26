@@ -1,10 +1,17 @@
 import { Link } from "react-router-dom";
 
 const ScheduleItem = ({title, startTime, endTime, venue, registerUrl, exploreUrl}) => {
+  const Titles = title.split(", ");
   return (
     <div className="flex flex-col lg:flex-row lg:justify-between lg:items-center mb-4 pl-5 py-4 md:py-0 bg-gray-100 font-kodeMono">
       <div className="flex flex-col lg:flex-row lg:items-center">
-        <h3 className="text-xl font-bold text-primary font-neotriad">{title}</h3>
+        <h3 className="text-2xl font-bold text-primary font-neotriad py-2 max-w-72">
+          {
+            Titles.map((title, index) => (
+              <span key={index} className="block">{title}</span>
+            ))
+          }
+        </h3>
         <span className="mt-2 lg:mt-0 lg:ml-4">{startTime} - {endTime}</span>
       </div>
       <div className="mt-2 lg:mt-0">{venue}</div>
