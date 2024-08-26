@@ -6,7 +6,7 @@ import { day1Events, day2Events } from "../../../constants/events";
 const Tabview = ({ tab1, tab2 }) => {
   return (
     <Tabs>
-      <TabList className={"flex md:gap-2 my-3 font-kodeMono"}>
+      <TabList className={"flex mx-1 md:gap-2 my-2 font-kodeMono"}>
         <Tab
           className={
             "px-14 py-3 text-base font-medium text-primary bg-white border-primary focus:outline-none hover:bg-[#e3dbcc] text-center border-2 cursor-pointer"
@@ -25,7 +25,7 @@ const Tabview = ({ tab1, tab2 }) => {
           {tab2}
         </Tab>
       </TabList> 
-      <div className="BoxShadow mx-2 my-2 px-3 py-4 pb-12">
+      <div className="BoxShadow mx-1 my-1 px-3 py-4 pb-12">
         <TabPanel>
           {day1Events.map((item, index) => (
             <ScheduleItem
@@ -34,8 +34,8 @@ const Tabview = ({ tab1, tab2 }) => {
               startTime={item.startTime}
               endTime={item.endTime}
               venue={item.venue}
-              registerUrl={item.registerUrl}
               exploreUrl={item.exploreUrl}
+              fullDay = {item.fullDay}
             />
           ))}
         </TabPanel>
@@ -47,7 +47,6 @@ const Tabview = ({ tab1, tab2 }) => {
               startTime={item.startTime}
               endTime={item.endTime}
               venue={item.venue}
-              registerUrl={item.registerUrl}
               exploreUrl={item.exploreUrl}
             />
           ))}
