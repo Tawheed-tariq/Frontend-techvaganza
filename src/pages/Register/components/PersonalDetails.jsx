@@ -55,26 +55,26 @@ export default function PersonalDetails() {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    // if(handleValidation()) 
-      setCurrStep((prev) => prev + 1);;
+    if(handleValidation()) 
+      setCurrStep((prev) => prev + 1);
   }
 
   return (
     <PageLayout title={"Register"} imgUrl={"/events/visual-cover.jpg"}>
       <div className="bg-background ShadowLarge pb-8">
-        <div className="font-playfair text-center px-8 pt-8 ">
-          <p className="text-primary font-extrabold font-neotriad text-5xl leading-normal">
+        <div className="font-playfair text-center md:px-8 pt-8 ">
+          <p className="text-primary font-extrabold font-neotriad text-3xl md:text-5xl leading-normal">
             Personal Details
           </p>
         </div>
         <form>
           {/* First name and last name */}
-          <div className="px-8 py-4">
-            <div className="flex justify-center">
-              <div className="flex flex-col w-1/2 px-4">
+          <div className="md:px-8 py-2 md:py-4">
+            <div className="flex flex-col md:flex-row gap-4 md:gap-0 justify-center">
+              <div className="flex flex-col md:w-1/2 px-4">
                 <label
                   htmlFor="first-name"
-                  className="text-primary font-neotriad font-bold text-2xl mb-2"
+                  className="text-primary font-neotriad font-bold text-xl md:text-2xl mb-2"
                 >
                   First Name
                 </label>
@@ -87,10 +87,10 @@ export default function PersonalDetails() {
                   className="border border-primary bg-transparent text-black font-kodeMono font-medium text-md px-4 py-2 focus:outline-none"
                 />
               </div>
-              <div className="flex flex-col w-1/2 px-4">
+              <div className="flex flex-col md:w-1/2 px-4">
                 <label
                   htmlFor="last-name"
-                  className="text-primary font-neotriad font-bold text-2xl mb-2"
+                  className="text-primary font-neotriad font-bold text-xl md:text-2xl mb-2"
                 >
                   Last Name
                 </label>
@@ -106,11 +106,11 @@ export default function PersonalDetails() {
             </div>
           </div>
           {/* Email */}
-          <div className="px-8 py-4">
+          <div className="md:px-8 py-2 md:py-4">
             <div className="flex flex-col w-full px-4">
               <label
                 htmlFor="email"
-                className="text-primary font-neotriad font-bold text-2xl mb-2"
+                className="text-primary font-neotriad font-bold text-xl md:text-2xl mb-2"
               >
                 Email
               </label>
@@ -125,11 +125,11 @@ export default function PersonalDetails() {
             </div>
           </div>
           {/* Contact number */}
-          <div className="px-8 py-4">
+          <div className="md:px-8 py-2 md:py-4">
             <div className="flex flex-col w-full px-4">
               <label
                 htmlFor="contact"
-                className="text-primary font-neotriad font-bold text-2xl mb-2"
+                className="text-primary font-neotriad font-bold text-xl md:text-2xl mb-2"
               >
                 Contact Number
               </label>
@@ -144,11 +144,11 @@ export default function PersonalDetails() {
             </div>
           </div>
           {/* College */}
-          <div className="px-8 py-4">
+          <div className="md:px-8 py-2 md:py-4">
             <div className="flex flex-col w-full px-4">
               <label
                 htmlFor="college"
-                className="text-primary font-neotriad font-bold text-2xl mb-2"
+                className="text-primary font-neotriad font-bold text-xl md:text-2xl mb-2"
               >
                 College
               </label>
@@ -166,11 +166,11 @@ export default function PersonalDetails() {
           </div>
           {/* Enrollment Number (only for NIT Srinagar Students) */}
           {userData.college === "NITS" ? (
-            <div className="px-8 py-4">
+            <div className="md:px-8 py-2 md:py-4">
               <div className="flex flex-col w-full px-4">
                 <label
                   htmlFor="enrollmentNumber"
-                  className="text-primary font-neotriad font-bold text-2xl mb-2"
+                  className="text-primary font-neotriad font-bold text-xl md:text-2xl mb-2"
                 >
                   Enrollment Number
                 </label>
@@ -185,11 +185,11 @@ export default function PersonalDetails() {
               </div>
             </div>
           ) : (
-            <div className="px-8 py-4">
+            <div className="md:px-8 py-2 md:py-4">
               <div className="flex flex-col w-full px-4">
                 <label
                   htmlFor="collegename"
-                  className="text-primary font-neotriad font-bold text-2xl mb-2"
+                  className="text-primary font-neotriad font-bold text-xl md:text-2xl mb-2"
                 >
                   Institution Name
                 </label>
@@ -205,11 +205,11 @@ export default function PersonalDetails() {
             </div>
           )}
           {/* Address */}
-          <div className="px-8 py-4">
+          <div className="md:px-8 py-2 md:py-4">
             <div className="flex flex-col w-full px-4">
               <label
                 htmlFor="address"
-                className="text-primary font-neotriad font-bold text-2xl mb-2"
+                className="text-primary font-neotriad font-bold text-xl md:text-2xl mb-2"
               >
                 Address
               </label>
@@ -224,9 +224,8 @@ export default function PersonalDetails() {
             </div>
           </div>
           {/* Submit button */}
-          <div className="px-8 py-4 flex justify-center">
+          <div className="md:px-8 py-2 md:py-4 flex justify-center">
             <button
-              // onClick={() => setCurrStep((prev) => prev + 1)}
               onClick={handleSubmit}
               className="bg-primary text-secondary font-semibold py-4 px-10 font-kodeMono "
             >

@@ -17,7 +17,7 @@ const ScheduleItem = ({title, startTime, endTime, venue, exploreUrl, fullDay}) =
           <span className="mt-2 lg:mt-0 lg:w-52 font-medium">{startTime} - {endTime}</span>
         }
       </div>
-      <div className="mt-2 lg:max-w-56 lg:mt-0 text-gray-800 font-medium">{venue}</div>
+      <div className="mt-2 lg:max-w-48 lg:mt-0 text-gray-800 font-medium">{venue}</div>
       <div className="mt-2 lg:mt-0 py-6 md:py-6 md:px-5 flex">
         <button className="px-6 md:px-8 py-2 ShadowBlur text-sm md:text-base rounded-md font-medium text-white bg-primary border border-primary focus:outline-none text-center">
           <Link to={exploreUrl}>
